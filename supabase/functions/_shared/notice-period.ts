@@ -301,7 +301,7 @@ export async function buildNoticePDF(opts: NoticePDFOptions): Promise<Uint8Array
   }
 
   // ── Header ─────────────────────────────────────────────────────────────────
-  drawLine('CHOICE PROPERTIES', 9, fB, 2);
+  drawLine('PROGRESS RESIDENTIAL', 9, fB, 2);
   drawLine('Property Management', 9, fN, 6);
   rule();
   gap(6);

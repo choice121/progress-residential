@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <script src="/js/cp-error-reporter.js?v=1791777951899"></script>
+  <script src="/js/cp-error-reporter.js?v=1791790382997"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
@@ -17,13 +17,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap">
   <link rel="preconnect" id="sb-preconnect"><!-- set by config.js -->
-  <link rel="stylesheet" href="/css/cp-design.css?v=1791777951899">
+  <link rel="stylesheet" href="/css/cp-design.css?v=1791790382997">
   <script defer src="/config.js"></script>
-  <script defer src="/js/supabase.min.js?v=1791777951899"></script>
-  <script defer src="/js/cp-api.js?v=1791777951899" type="module"></script>
-  <script defer src="/js/cp-ui.js?v=1791777951899"></script>
-  <script defer src="/js/cp-chrome.js?v=1791777951899"></script>
-  <script defer src="/js/cp-shell.js?v=1791777951899"></script>
+  <script defer src="/js/supabase.min.js?v=1791790382997"></script>
+  <script defer src="/js/cp-api.js?v=1791790382997" type="module"></script>
+  <script defer src="/js/cp-ui.js?v=1791790382997"></script>
+  <script defer src="/js/cp-chrome.js?v=1791790382997"></script>
+  <script defer src="/js/cp-shell.js?v=1791790382997"></script>
   <style>
     /* Page-scoped styles for applications list — uses cp-design tokens. */
     .filter-pills {
@@ -165,7 +165,7 @@
     }
     .notes-area:focus {
       border-color: var(--brand);
-      box-shadow: 0 0 0 3px var(--ring, rgba(0,106,255,.15));
+      box-shadow: 0 0 0 3px var(--ring, rgba(8,93,103,.15));
     }
   </style>
 </head>
@@ -233,7 +233,7 @@ function showToast(msg, type='success'){
 
 function avatar(app){
   const initials=((app.first_name||'?')[0]+(app.last_name||'?')[0]).toUpperCase();
-  const colors=['#1d4ed8','#7c3aed','#0e7490','#15803d','#b45309','#be185d','#1e40af'];
+  const colors=['#085d67','#7c3aed','#0e7490','#15803d','#b45309','#be185d','#004751'];
   const color=colors[(app.first_name||'').charCodeAt(0)%colors.length];
   return `<div class="app-avatar" style="background:${color}">${initials}</div>`;
 }

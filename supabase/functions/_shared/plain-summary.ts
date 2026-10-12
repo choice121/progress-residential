@@ -60,7 +60,7 @@ const SUMMARY_STRINGS: Record<Locale, Record<string, string>> = {
     pets_label:    'Pets',
     pets_body:     "Any pet must be pre-approved in writing. Unauthorized pets may result in additional fees or lease termination. Review the addenda for your property's pet policy.",
     footer:        'This summary is provided as a convenience. The full lease agreement on the following pages is the legally binding document. If you have questions, contact us before signing.',
-    brand:         'Progress Residential · 2265 Livernois Suite 500, Troy MI 48083 · 707-706-3137',
+    brand:         'Progress Residential · 1801 Royal Ln., Suite 307, Dallas, TX 75229 · 707-706-3137',
   },
   es: {
     title:         'Resumen de Su Contrato',
@@ -78,7 +78,7 @@ const SUMMARY_STRINGS: Record<Locale, Record<string, string>> = {
     pets_label:    'Mascotas',
     pets_body:     'Toda mascota debe ser pre-aprobada por escrito. Las mascotas no autorizadas pueden resultar en cargos adicionales o terminación del contrato. Consulte los adendos para la política de mascotas de su propiedad.',
     footer:        'Este resumen se proporciona como conveniencia. El contrato de arrendamiento completo en las páginas siguientes es el documento legalmente vinculante. Si tiene preguntas, contáctenos antes de firmar.',
-    brand:         'Progress Residential · 2265 Livernois Suite 500, Troy MI 48083 · 707-706-3137',
+    brand:         'Progress Residential · 1801 Royal Ln., Suite 307, Dallas, TX 75229 · 707-706-3137',
   },
 };
 

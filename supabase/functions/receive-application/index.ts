@@ -466,7 +466,7 @@ Deno.serve(async (req: Request) => {
   const emailJobs = [
     sendEmail({
       to: email,
-      subject: `Application Received — ${propLabel.split(',')[0]} | Choice Properties (Ref: ${appId})`,
+      subject: `Application Received — ${propLabel.split(',')[0]} | Progress Residential (Ref: ${appId})`,
       html: applicationConfirmationHtml(firstName, propLabel, appId, fields, portalUrl, enforcedFee ?? null),
     }).then(result => logEmail('application_confirmation', email, result.ok ? 'sent' : 'failed', result.provider, result.ok ? null : (result.error || 'send failed')))
       .catch(async err => {

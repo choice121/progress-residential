@@ -265,7 +265,7 @@ Deno.serve(async (req) => {
   }
 
   // 9. Resolve landlord display name (best-effort)
-  let landlordName = 'Choice Properties';
+  let landlordName = 'Progress Residential';
   if (app.property_id) {
     const { data: prop } = await supabase
       .from('properties').select('landlord_id').eq('id', app.property_id).maybeSingle();
@@ -477,12 +477,12 @@ Deno.serve(async (req) => {
           <p style="font-size:13px;color:#64748b">You can also view this accounting and its itemized deductions at any time by signing in to your tenant portal: <a href="${tenantPortalUrl}" style="color:#0f172a">${tenantPortalUrl}</a></p>
           <p style="font-size:13px;color:#64748b">If you disagree with any of the deductions, you can file a formal dispute directly from the portal page above.</p>
           <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0">
-          <p style="font-size:12px;color:#94a3b8">This is an automated notification from Choice Properties. The download link above is valid for 7 days.</p>
+          <p style="font-size:12px;color:#94a3b8">This is an automated notification from Progress Residential. The download link above is valid for 7 days.</p>
         </div>
       `;
       const result = await sendEmail({
         to:      app.email,
-        subject: `Your security deposit accounting — ${propLabel || 'Choice Properties'}`,
+        subject: `Your security deposit accounting — ${propLabel || 'Progress Residential'}`,
         html,
       });
       email_sent     = result.ok;

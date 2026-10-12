@@ -1,5 +1,5 @@
 // ============================================================
-// Choice Properties — ImageKit Watermark Edge Function
+// Progress Residential — ImageKit Watermark Edge Function
 // Supabase → Functions → imagekit-watermark
 //
 // Required secrets in Supabase Dashboard → Edge Functions → Secrets:
@@ -8,12 +8,12 @@
 //
 // This function (admin-only):
 //   1. Accepts { url, file_id, property_id } — at least url required
-//   2. Builds a new ImageKit URL with a "Choice Properties" text overlay
+//   2. Builds a new ImageKit URL with a "Progress Residential" text overlay
 //   3. Updates property_photos: new watermarked URL + watermark_status='applied'
 //   4. Returns { success: true, url: watermarkedUrl }
 //
 // ImageKit URL transformation used:
-//   ot-Choice%20Properties,otf-roboto,ots-40,otc-FFFFFF,
+//   ot-Progress%20Residential,otf-roboto,ots-32,otc-FFFFFF,
 //   ota-bottom_right,otp-20,otbg-000000_50
 // ============================================================
 
@@ -25,11 +25,11 @@ import { jsonResponse }  from '../_shared/utils.ts';
 // Inserts the transformation string before the image path segment.
 function buildWatermarkedUrl(originalUrl: string, endpoint: string): string {
   // FIX: spaces in ImageKit URL path segments must be percent-encoded.
-  // "Choice Properties" → "Choice%20Properties" to produce a valid URL.
-  const tr = 'ot-Choice%20Properties,otf-roboto,ots-40,otc-FFFFFF,ota-bottom_right,otp-20,otbg-000000_50';
+  // Spaces in ImageKit text overlays must be percent-encoded.
+  const tr = 'ot-Progress%20Residential,otf-roboto,ots-32,otc-FFFFFF,ota-bottom_right,otp-20,otbg-000000_50';
 
-  // If URL already contains our transformation, return as-is.
-  if (originalUrl.includes('ot-Choice')) return originalUrl;
+  // Preserve URLs already watermarked with either the old or current brand.
+  if (originalUrl.includes('ot-Choice') || originalUrl.includes('ot-Progress')) return originalUrl;
 
   // Strategy 1: URL starts with our endpoint — insert /tr:... after the base.
   const base = endpoint.replace(/\/$/, '');

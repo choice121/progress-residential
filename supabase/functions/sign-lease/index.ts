@@ -183,7 +183,7 @@ Deno.serve(async (req: Request) => {
           const signingUrl = `${getSiteUrl()}/lease-sign.html?token=${appSigned.co_applicant_lease_token}`;
           const coResult = await sendEmail({
             to:      co.email,
-            subject: `\u{1F4DD} Your Co-Applicant Lease is Ready to Sign - Choice Properties (Ref: ${appSigned.app_id})`,
+            subject: `\u{1F4DD} Your Co-Applicant Lease is Ready to Sign - Progress Residential (Ref: ${appSigned.app_id})`,
             html:    coApplicantInviteHtml(
               co.first_name || 'Co-Applicant',
               `${appSigned.first_name || ''} ${appSigned.last_name || ''}`.trim() || 'the primary applicant',
@@ -206,7 +206,7 @@ Deno.serve(async (req: Request) => {
       } : undefined;
       const tenantResult = await sendEmail({
         to:      appSigned.email,
-        subject: `\u{1F389} Lease Signed - Welcome to Choice Properties (Ref: ${appSigned.app_id})`,
+        subject: `\u{1F389} Lease Signed - Welcome to Progress Residential (Ref: ${appSigned.app_id})`,
         html:    signedConfirmHtml(appSigned.first_name || 'Applicant', appSigned.property_address || '', appSigned.app_id, leaseData),
       });
       await logEmail(appSigned.app_id, 'lease_signed_confirm', appSigned.email, tenantResult.ok ? 'sent' : 'failed', tenantResult.provider, tenantResult.ok ? null : (tenantResult.error || 'failed'));

@@ -57,7 +57,7 @@ const EMAIL_BASE_CSS = `
   .status-paid     { color:#166534; }
   .status-approved { color:#166534; }
   .status-denied   { color:#991b1b; }
-  .status-lease    { color:#1e40af; }
+  .status-lease    { color:#004751; }
   .email-body { padding:36px 40px; }
   .greeting   { font-size:16px; font-weight:600; color:#1a1a1a; margin-bottom:16px; }
   .intro-text { font-size:14px; color:#444444; line-height:1.7; margin-bottom:28px; }
@@ -109,7 +109,7 @@ const EMAIL_FOOTER = `
   <div class="email-footer">
     <div class="footer-name">Progress Residential</div>
     <div class="footer-details">
-      2265 Livernois, Suite 500 &middot; Troy, MI 48083<br>
+      1801 Royal Ln., Suite 307 &middot; Dallas, TX 75229<br>
       707-706-3137 (Text Only)<br>
       Your trust is our standard.
     </div>
@@ -299,7 +299,7 @@ export function adminNotificationHtml(
     fields?.['Third Choice Payment Method'],
   ].filter(Boolean) as string[];
   const adminPaymentSection = hasFee
-    ? `<div class="section"><div class="section-label" style="color:#1d4ed8;">\ud83d\udcb3 Payment Coordination \u2014 Act First</div><div class="callout amber"><h4>Collect ${feeDisplay} Application Fee via Applicant\u2019s Preferred Method</h4>${payMethods.length ? `<p style="margin-bottom:10px;"><strong>Contact ${firstName} using:</strong></p><div style="margin-bottom:8px;">${payMethods.map((m, i) => `<span class="pay-pill" style="${i===0?'background:#1e3a8a;color:#fff;font-weight:700;':''}">${i===0?'\u2605 ':''}${m}</span>`).join('')}</div><p style="font-size:12px;color:#6b7280;margin-top:8px;">Once payment is received, open the application in the admin panel and click \u201cMark paid\u201d.</p>` : '<p>No payment method preference specified \u2014 contact applicant directly to arrange.</p>'}</div></div>`
+    ? `<div class="section"><div class="section-label" style="color:#085d67;">\ud83d\udcb3 Payment Coordination \u2014 Act First</div><div class="callout amber"><h4>Collect ${feeDisplay} Application Fee via Applicant\u2019s Preferred Method</h4>${payMethods.length ? `<p style="margin-bottom:10px;"><strong>Contact ${firstName} using:</strong></p><div style="margin-bottom:8px;">${payMethods.map((m, i) => `<span class="pay-pill" style="${i===0?'background:#085d67;color:#fff;font-weight:700;':''}">${i===0?'\u2605 ':''}${m}</span>`).join('')}</div><p style="font-size:12px;color:#6b7280;margin-top:8px;">Once payment is received, open the application in the admin panel and click \u201cMark paid\u201d.</p>` : '<p>No payment method preference specified \u2014 contact applicant directly to arrange.</p>'}</div></div>`
     : freeApp
       ? `<div class="section"><div class="callout green"><h4>\u2713 No Application Fee</h4><p>No payment collection required \u2014 proceed directly to review.</p></div></div>`
       : '';
@@ -383,8 +383,8 @@ Note: We also dispatched your formal application confirmation to ${email}. If yo
       <div class="section-label">Quick Actions</div>
       <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px;">
         <a href="${adminUrl}" style="display:inline-block;background:#0a1628;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Admin Dashboard</a>
-        <a href="mailto:${email}?subject=Your%20Application%20${appId}%20-%20Choice%20Properties" style="display:inline-block;background:#1d4ed8;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Email Applicant</a>
-        ${fields?.['Phone'] ? `<a href="sms:${fields['Phone'].toString().replace(/\D/g,'')}?body=Hi%20${firstName}%2C%20this%20is%20Choice%20Properties%20regarding%20your%20application%20${appId}" style="display:inline-block;background:#059669;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Text Applicant</a>` : ''}
+        <a href="mailto:${email}?subject=Your%20Application%20${appId}%20-%20Progress%20Residential" style="display:inline-block;background:#085d67;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Email Applicant</a>
+        ${fields?.['Phone'] ? `<a href="sms:${fields['Phone'].toString().replace(/\D/g,'')}?body=Hi%20${firstName}%2C%20this%20is%20Progress%20Residential%20regarding%20your%20application%20${appId}" style="display:inline-block;background:#059669;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Text Applicant</a>` : ''}
       </div>
     </div>
 
@@ -456,7 +456,7 @@ export function statusUpdateHtml(
     </div>
     ` : isWaitlisted ? `
     <p class="intro-text">Thank you for your application for <strong>${propertyLabel}</strong>. We have reviewed your application and have added you to our active waitlist for this property.</p>
-    <div class="callout" style="border-color:#1e40af;">
+    <div class="callout" style="border-color:#004751;">
       <h4>&#x23F3; You Are on the Active Waitlist</h4>
       <p>${reason || 'Your application is complete and has been placed in our priority waitlist queue. We will contact you as soon as a unit becomes available or a comparable property opens up.'}</p>
     </div>
@@ -900,7 +900,7 @@ export function signedConfirmHtml(
     <p class="greeting">Dear ${firstName},</p>
     <p class="intro-text">Your electronic signature for the lease at <strong>${propertyAddress}</strong> has been successfully recorded. Your lease is now pending management countersignature. Once management signs, both parties will receive a fully executed copy and your tenancy will be officially confirmed.</p>
 
-    <div class="callout" style="border-color:#1e40af;">
+    <div class="callout" style="border-color:#004751;">
       <h4>&#x270D; Signature Recorded — Next: Management Countersignature</h4>
       <div class="financial-row"><span class="f-label">Property</span><span class="f-value">${propertyAddress}</span></div>
       ${leaseData?.startDate ? `<div class="financial-row"><span class="f-label">Move-In Date</span><span class="f-value">${leaseData.startDate}</span></div>` : ''}
@@ -1484,7 +1484,7 @@ export function amendmentRequestHtml(
     <p class="greeting">Dear ${firstName},</p>
     <p class="intro-text">Management has prepared an amendment to your existing lease for <strong>${propertyAddress}</strong>. This is a separate document that will be added to your file once signed; it does not replace your original lease.</p>
 
-    <div class="callout" style="border-color:#1e40af;">
+    <div class="callout" style="border-color:#004751;">
       <h4>${amendmentTitle}</h4>
       <p>Please review the full text of the amendment carefully before signing. If anything is unclear, contact our team before proceeding.</p>
     </div>
@@ -1860,7 +1860,7 @@ function buildLandlordHeader(title: string, appId?: string): string {
 
 const LANDLORD_FOOTER = `
   <div style="background:#f8f8f8;border-top:1px solid #e0e0e0;padding:16px 32px;text-align:center;font-size:12px;color:#888;line-height:1.7">
-    Progress Residential &middot; 2265 Livernois, Suite 500, Troy MI 48083<br>
+    Progress Residential &middot; 1801 Royal Ln., Suite 307, Dallas, TX 75229<br>
     This notification was sent because you are the registered landlord for this property.
   </div>`;
 
@@ -1966,7 +1966,7 @@ export function landlordTenantSignedHtml(
       <div class="row"><span class="lbl">Tenant</span><span class="val"><strong>${tenantName}</strong></span></div>
       <div class="row"><span class="lbl">Property</span><span class="val">${propertyAddress}</span></div>
       <div class="row"><span class="lbl">Reference</span><span class="val" style="font-family:monospace">${appId}</span></div>
-      <div class="row"><span class="lbl">Status</span><span class="val"><strong style="color:#1e40af">Pending countersignature</strong></span></div>
+      <div class="row"><span class="lbl">Status</span><span class="val"><strong style="color:#004751">Pending countersignature</strong></span></div>
     </div>
     <a href="${adminUrl}" class="cta">View in Admin Portal</a>
   </div>`);

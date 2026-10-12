@@ -1,4 +1,4 @@
-// Choice Properties — Edge Function: send-message
+// Progress Residential — Edge Function: send-message
 // Allowed callers:
 //   • Admin users (admin_roles table)
 //   • Authenticated landlords — only for applications on their own properties
@@ -90,7 +90,7 @@ Deno.serve(async (req) => {
 
     // ── SECURITY: derive sender + sender_name from auth, not body ─
     // Previously both came straight from the request body, so a landlord
-    // could send a message with sender:'admin' and sender_name:'Choice Properties
+    // could send a message with sender:'admin' and sender_name:'Progress Residential
     // Admin Team' — making fake-admin messages indistinguishable from real
     // admin messages in the tenant's inbox + persisted DB row.
     //
@@ -99,7 +99,7 @@ Deno.serve(async (req) => {
     //   • Admins may set sender='tenant' (legitimate "relay this tenant message
     //     to the landlord" flow described at the bottom of this function) or
     //     sender='admin' (default). Admin sender_name is honoured for branded
-    //     reply variations ("Choice Properties Support" etc).
+    //     reply variations ("Progress Residential Support" etc).
     let effectiveSender: 'admin' | 'landlord' | 'tenant'
     let effectiveSenderName: string
     if (isAdmin) {
@@ -110,7 +110,7 @@ Deno.serve(async (req) => {
         ? clientSenderName.trim().slice(0, 200)
         : (effectiveSender === 'tenant' ? 'Tenant'
            : effectiveSender === 'landlord' ? 'Landlord'
-           : 'Choice Properties')
+           : 'Progress Residential')
     } else {
       // Landlord — forced identity. Look up the landlord's preferred display name.
       effectiveSender = 'landlord'

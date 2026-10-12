@@ -263,7 +263,7 @@
         // ───────── Policies & landlord ─────────
         { type:'section', label:'Policies & landlord' },
         { name:'lease_landlord_name',    label:'Landlord name',    value: app.lease_landlord_name    || 'Progress Residential' },
-        { name:'lease_landlord_address', label:'Landlord address', value: app.lease_landlord_address || '2265 Livernois Suite 500, Troy MI 48083' },
+        { name:'lease_landlord_address', label:'Landlord address', value: app.lease_landlord_address || '1801 Royal Ln., Suite 307, Dallas, TX 75229' },
         { name:'lease_pets_policy',      label:'Pets policy',      value: app.lease_pets_policy     || '', placeholder:'No pets allowed.' },
         { name:'lease_smoking_policy',   label:'Smoking policy',   value: app.lease_smoking_policy  || '', placeholder:'No smoking permitted on premises.' },
         { name:'lease_notes',            label:'Lease notes (internal)', type:'textarea', rows:2, value: app.lease_notes || '' },
@@ -306,7 +306,7 @@
       move_in_costs:          num(data.move_in_costs),
       lease_late_fee_flat:    num(data.lease_late_fee_flat),
       lease_landlord_name:    data.lease_landlord_name    || 'Progress Residential',
-      lease_landlord_address: data.lease_landlord_address || '2265 Livernois Suite 500, Troy MI 48083',
+      lease_landlord_address: data.lease_landlord_address || '1801 Royal Ln., Suite 307, Dallas, TX 75229',
       lease_state_code:       data.lease_state_code       || 'MI',
       lease_pets_policy:      data.lease_pets_policy      || null,
       lease_smoking_policy:   data.lease_smoking_policy   || null,

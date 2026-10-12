@@ -124,7 +124,7 @@ Deno.serve(async (req: Request) => {
       const url = `${getSiteUrl()}/lease-sign.html?amendment_token=${token}`;
       await sendEmail({
         to:      app.email,
-        subject: `\u{1F4DD} Lease Amendment Ready to Sign — Choice Properties (Ref: ${app_id})`,
+        subject: `\u{1F4DD} Lease Amendment Ready to Sign — Progress Residential (Ref: ${app_id})`,
         html:    amendmentRequestHtml(
           app.first_name || 'Applicant',
           app.property_address || '',

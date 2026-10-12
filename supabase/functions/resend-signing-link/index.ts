@@ -95,10 +95,10 @@ Deno.serve(async (req: Request) => {
   if (sendNow && toEmail) {
     try {
       const subject = role === 'co_applicant'
-        ? `\u{1F4DD} New Co-Applicant Signing Link -- Choice Properties (Ref: ${app_id})`
+        ? `\u{1F4DD} New Co-Applicant Signing Link -- Progress Residential (Ref: ${app_id})`
         : role === 'amendment'
-        ? `\u{1F4DD} New Amendment Signing Link -- Choice Properties (Ref: ${app_id})`
-        : `\u{1F4DD} New Lease Signing Link -- Choice Properties (Ref: ${app_id})`;
+        ? `\u{1F4DD} New Amendment Signing Link -- Progress Residential (Ref: ${app_id})`
+        : `\u{1F4DD} New Lease Signing Link -- Progress Residential (Ref: ${app_id})`;
       const html = role === 'co_applicant'
         ? coApplicantInviteHtml(
             toName,

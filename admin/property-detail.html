@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="/js/cp-error-reporter.js?v=1791777951899"></script>
+  <script src="/js/cp-error-reporter.js?v=1791790382997"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0a0f1e">
+<meta name="theme-color" content="#151516">
 <meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -17,12 +17,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-<link rel="stylesheet" href="/css/cp-design.css?v=1791777951899">
+<link rel="stylesheet" href="/css/cp-design.css?v=1791790382997">
 <script defer src="/config.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.min.js" integrity="sha384-YieCqqg9gQufX7+5HcFvCEg/n3KUEdl8/Jb+A6J0npf1mB740VayvwKjTrtCeUoy" crossorigin="anonymous"></script>
-<script defer src="/js/cp-api.js?v=1791777951899" type="module"></script>
-<script defer src="/js/cp-chrome.js?v=1791777951899"></script>
-<script defer src="/js/cp-shell.js?v=1791777951899"></script>
+<script defer src="/js/cp-api.js?v=1791790382997" type="module"></script>
+<script defer src="/js/cp-chrome.js?v=1791790382997"></script>
+<script defer src="/js/cp-shell.js?v=1791790382997"></script>
 <style>
 /* ── Gallery / Mosaic ── */
 .pd-mosaic{display:grid;grid-template-columns:1fr;gap:4px;border-radius:var(--r-md);overflow:hidden;margin-bottom:4px}
@@ -43,7 +43,7 @@
 .pd-expand-btn:hover{background:rgba(0,0,0,.85)}
 .pd-no-photo{height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--surface-2);border-radius:var(--r-md);color:var(--muted);margin-bottom:4px;font-size:.82rem}
 .pd-no-photo-btn{cursor:pointer;border:2px dashed var(--border);transition:border-color .15s,background .15s;gap:8px}
-.pd-no-photo-btn:hover,.pd-no-photo-btn:focus{border-color:var(--brand);background:rgba(59,130,246,.05);outline:none;color:var(--brand)}
+.pd-no-photo-btn:hover,.pd-no-photo-btn:focus{border-color:var(--brand);background:rgba(22,130,129,.05);outline:none;color:var(--brand)}
 
 /* ── Gallery strip ── */
 .pd-gallery-strip{display:flex;gap:6px;overflow-x:auto;padding:4px 2px;margin-bottom:16px;scrollbar-width:thin}
@@ -77,7 +77,7 @@
 .pd-status-chip:hover{background:var(--surface-3,var(--surface));color:var(--text)}
 .pd-status-chip.is-current{cursor:default}
 .pd-status-chip.active.is-current{background:rgba(34,197,94,.18);border-color:rgba(34,197,94,.5);color:#16a34a}
-.pd-status-chip.rented.is-current{background:rgba(59,130,246,.18);border-color:rgba(59,130,246,.5);color:#2563eb}
+.pd-status-chip.rented.is-current{background:rgba(22,130,129,.18);border-color:rgba(22,130,129,.5);color:#004751}
 .pd-status-chip.inactive.is-current{background:var(--surface-2);border-color:var(--border);color:var(--muted)}
 .pd-status-chip.maintenance.is-current{background:rgba(245,158,11,.18);border-color:rgba(245,158,11,.5);color:#b45309}
 .pd-status-check{font-size:.7rem;margin-left:2px}
@@ -167,7 +167,7 @@ select.pd-edit-input{cursor:pointer}
 
 /* ── Photo manager upload zone ── */
 .pd-pm-upload-zone{border:2px dashed var(--border);border-radius:var(--r-md);padding:22px 16px;text-align:center;cursor:pointer;transition:border-color .15s,background .15s;margin-top:16px;position:relative;display:flex;flex-direction:column;align-items:center;gap:4px}
-.pd-pm-upload-zone:hover,.pd-pm-upload-zone.drag-over{border-color:var(--brand);background:rgba(59,130,246,.05)}
+.pd-pm-upload-zone:hover,.pd-pm-upload-zone.drag-over{border-color:var(--brand);background:rgba(22,130,129,.05)}
 .pd-pm-upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
 .pd-pm-upload-zone i{font-size:1.5rem;color:var(--brand)}
 .pd-pm-upload-zone strong{font-size:.86rem;font-weight:700;color:var(--text)}
@@ -190,7 +190,7 @@ select.pd-edit-input{cursor:pointer}
 .pd-tag{display:flex;align-items:center;gap:7px;font-size:.78rem;font-weight:500;color:var(--text);padding:6px 10px;background:var(--surface-2);border:1.5px solid var(--border);border-radius:var(--r-sm);cursor:pointer;user-select:none;transition:border-color .15s,background .15s;line-height:1.2}
 .pd-tag:hover{border-color:var(--brand)}
 .pd-tag input[type=checkbox]{accent-color:var(--brand);width:14px;height:14px;flex-shrink:0;cursor:pointer}
-.pd-tag:has(input:checked){border-color:var(--brand);background:rgba(59,130,246,.08)}
+.pd-tag:has(input:checked){border-color:var(--brand);background:rgba(22,130,129,.08)}
 
 /* ── Desc counter ── */
 .pd-char-counter{font-size:.65rem;font-weight:500;color:var(--muted);text-align:right;margin-top:2px}
@@ -201,7 +201,7 @@ select.pd-edit-input{cursor:pointer}
 
 /* ── Cover photo ── */
 .pd-pm-cover-btn{position:absolute;bottom:4px;right:4px;background:rgba(0,0,0,.65);color:#fff;border:none;border-radius:4px;padding:2px 7px;font-size:.62rem;font-weight:700;cursor:pointer;z-index:3;white-space:nowrap;transition:background .15s}
-.pd-pm-cover-btn:hover{background:rgba(59,130,246,.9)}
+.pd-pm-cover-btn:hover{background:rgba(22,130,129,.9)}
 .pd-pm-cover-btn.is-cover{background:rgba(34,197,94,.85);cursor:default}
 
 /* ── Mobile improvements ── */
@@ -324,6 +324,6 @@ select.pd-edit-input{cursor:pointer}
   </main>
 </div>
 
-<script defer src="/js/admin/property-detail.js?v=1791777951899"></script>
+<script defer src="/js/admin/property-detail.js?v=1791790382997"></script>
 </body>
 </html>

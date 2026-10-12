@@ -37,6 +37,7 @@ import {
 } from 'npm:pdf-lib@1.17.1';
 import type { SupabaseClient } from 'npm:@supabase/supabase-js@2';
 import { renderTemplate, createSupabasePartialResolver } from './template-engine.ts';
+import { getSiteUrl } from './config.ts';
 
 // ── Types ────────────────────────────────────────────────────────────
 
@@ -604,7 +605,7 @@ export async function buildDepositLetterPDF(args: DepositAccountingPDFArgs): Pro
   page.drawText(toAnsi('How to submit a dispute'), { x: MARGIN, y: y - 11, size: 10, font: fontBold, color: COL.ink });
   y -= 16;
   const howLines = wrap(
-    'Log in to the tenant portal at choiceproperties.com/tenant and open the security deposit page; ' +
+    `Log in to the tenant portal at ${getSiteUrl()}/tenant/deposit.html and open the security deposit page; ` +
     'use the "Dispute" button to submit your written objection. Your dispute will be recorded with a ' +
     'timestamp and reviewed by the property manager. You may also send a written objection by certified ' +
     'mail to the property management address shown on this letter. Keep a copy of any correspondence ' +
