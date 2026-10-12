@@ -1,0 +1,6 @@
+{
+  "name": "Progress Residential",
+  "description": "Browse verified rental listings across the United States. Single-family homes, apartments, and condos — apply online in minutes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
