@@ -6,7 +6,7 @@ export function getAdminEmails(): string[] {
 }
 
 export function getSiteUrl(): string {
-  return (Deno.env.get('SITE_URL') || Deno.env.get('PUBLIC_SITE_URL') || 'https://choice-properties-site.pages.dev').replace(/\/$/, '');
+  return (Deno.env.get('SITE_URL') || Deno.env.get('PUBLIC_SITE_URL') || 'https://progress-residential.pages.dev').replace(/\/$/, '');
 }
 
 export function getTenantPortalUrl(): string {

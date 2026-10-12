@@ -170,7 +170,7 @@ scraper/venv/bin/python scraper/scraper.py \
   --beds-min 2 --beds-max 2 --price-max 1350 --source realtor
 
 # 4. Open the admin pipeline to review and publish
-#    https://choice-properties-site.pages.dev/admin/pipeline.html
+#    https://progress-residential.pages.dev/admin/pipeline.html
 ```
 
 > **Note:** The Zillow scraper requires a residential IP and cannot run from

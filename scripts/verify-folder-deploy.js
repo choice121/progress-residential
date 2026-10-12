@@ -1,6 +1,6 @@
 // Verifies the pipeline_folders migration was applied by checking
 // that the folder RPC functions exist in the remote database.
-const PROJECT_REF = 'tlfmwetmhthpyrytrcfo';
+const PROJECT_REF = 'poqgtsltsziuwvzskgth';
 const TOKEN = process.env.SUPABASE_ACCESS_TOKEN;
 if (!TOKEN) {
   console.error('SUPABASE_ACCESS_TOKEN env var is required');

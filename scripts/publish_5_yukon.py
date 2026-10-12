@@ -6,7 +6,7 @@ import time
 import requests
 import datetime
 
-SUPABASE_URL = "https://tlfmwetmhthpyrytrcfo.supabase.co"
+SUPABASE_URL = "https://poqgtsltsziuwvzskgth.supabase.co"
 SERVICE_ROLE_KEY = os.environ.get('SUPABASE_SERVICE_ROLE_KEY')
 if not SERVICE_ROLE_KEY:
     # try to get from .env
@@ -189,7 +189,7 @@ for idx, p in enumerate(all_to_publish, 1):
         "rent": rent,
         "beds": beds,
         "baths": baths,
-        "url": f"https://choice-properties-site.pages.dev/property.html?id={prop_id}"
+        "url": f"https://progress-residential.pages.dev/property.html?id={prop_id}"
     }
     published_results.append(item_info)
     print(f"[{idx}/5] Published: {address}, {city}, {state} {zip_code} (${rent}/mo | {beds} Bed / {baths:g} Bath) -> {item_info['url']}")

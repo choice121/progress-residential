@@ -27,12 +27,12 @@ import urllib.error
 import urllib.parse
 from datetime import datetime, timezone, timedelta
 
-SUPABASE_URL     = os.environ.get("SUPABASE_URL", "https://tlfmwetmhthpyrytrcfo.supabase.co").rstrip("/")
+SUPABASE_URL     = os.environ.get("SUPABASE_URL", "https://poqgtsltsziuwvzskgth.supabase.co").rstrip("/")
 SERVICE_ROLE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 RESEND_API_KEY   = os.environ.get("RESEND_API_KEY", "")
 NOTIFY_EMAIL     = os.environ.get("NOTIFY_EMAIL", "")
 FROM_EMAIL       = os.environ.get("FROM_EMAIL", "scraper@choiceproperties.com")
-ADMIN_URL        = os.environ.get("ADMIN_URL", "https://choice-properties-site.pages.dev/admin/pipeline.html")
+ADMIN_URL        = os.environ.get("ADMIN_URL", "https://progress-residential.pages.dev/admin/pipeline.html")
 
 _HEADERS = {
     "apikey":          SERVICE_ROLE_KEY,

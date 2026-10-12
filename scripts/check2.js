@@ -6,7 +6,7 @@ for (const line of envFile.split('\n')) {
         key = line.split('=')[1].trim().replace(/^"|"$/g, '');
     }
 }
-fetch(`https://tlfmwetmhthpyrytrcfo.supabase.co/rest/v1/properties?select=id,address,city`, {
+fetch(`https://poqgtsltsziuwvzskgth.supabase.co/rest/v1/properties?select=id,address,city`, {
     headers: { 'apikey': key, 'Authorization': `Bearer ${key}` }
 }).then(r => r.json()).then(d => {
     console.log(d.filter(x => x.city.includes("Charlotte")));

@@ -1,7 +1,7 @@
 {
-  "version": "28.0.0",
-  "updated_at": "2026-10-08T16:10:07.063Z",
-  "timestamp": 1791475807064,
+  "version": "28.0.1",
+  "updated_at": "2026-10-12T03:06:53.364Z",
+  "timestamp": 1791774413364,
   "channel": "stable",
   "name": "Import to Progress Residential",
   "download_url": "https://progress-residential.pages.dev/progress-residential-extension.zip",

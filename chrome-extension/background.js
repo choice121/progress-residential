@@ -20,7 +20,7 @@ if (typeof AbortSignal !== 'undefined' && !AbortSignal.timeout) {
 }
 
 // Inline config (Orion doesn't reliably support importScripts)
-const EDGE_URL = (typeof window !== 'undefined' && window.CP_CONFIG && window.CP_CONFIG.EDGE_URL) || 'https://tlfmwetmhthpyrytrcfo.supabase.co/functions/v1/receive-pipeline-import';
+const EDGE_URL = (typeof window !== 'undefined' && window.CP_CONFIG && window.CP_CONFIG.EDGE_URL) || 'https://poqgtsltsziuwvzskgth.supabase.co/functions/v1/receive-pipeline-import';
 const SECRET   = (typeof window !== 'undefined' && window.CP_CONFIG && window.CP_CONFIG.IMPORT_SECRET) || 'cp_import_7Kx3m9P2w5';
 const MAX_QUEUE_ITEMS = 75;
 const MAX_PAYLOAD_BYTES = 2 * 1024 * 1024;
@@ -465,7 +465,7 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
           return;
         }
         const resp = await fetch(
-          'https://tlfmwetmhthpyrytrcfo.supabase.co/functions/v1/import-pipeline-photos?secret=' + encodeURIComponent(SECRET),
+          'https://poqgtsltsziuwvzskgth.supabase.co/functions/v1/import-pipeline-photos?secret=' + encodeURIComponent(SECRET),
           {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

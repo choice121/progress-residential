@@ -251,19 +251,36 @@ console.log('📦 Packaging extension zips...');
 packageExtension(EXTENSION_DIR, ZIP_PATH, 'progress-residential-extension.zip');
 packageExtension(ORION_DIR, ORION_ZIP_PATH, 'progress-residential-orion-extension.zip');
 
+// ── 4.1 Update README version stamps ──────────────────────────────────
+const CHROME_README_PATH = path.join(ROOT, 'chrome-extension', 'README.md');
+if (fs.existsSync(CHROME_README_PATH)) {
+  let crText = fs.readFileSync(CHROME_README_PATH, 'utf8');
+  crText = crText.replace(/\(v\d+\.\d+\.\d+\)/, `(v${newVersion})`);
+  fs.writeFileSync(CHROME_README_PATH, crText, 'utf8');
+}
+const ROOT_README_PATH = path.join(ROOT, 'README.md');
+if (fs.existsSync(ROOT_README_PATH)) {
+  let rrText = fs.readFileSync(ROOT_README_PATH, 'utf8');
+  rrText = rrText.replace(/\(v\d+\.\d+\.\d+ — 1-click stage\)/, `(v${newVersion} — 1-click stage)`);
+  fs.writeFileSync(ROOT_README_PATH, rrText, 'utf8');
+}
+
 // Also copy to root and dist for universal HTTP serving
 try {
   fs.copyFileSync(ZIP_PATH, path.join(ROOT, 'progress-residential-extension.zip'));
   fs.copyFileSync(ORION_ZIP_PATH, path.join(ROOT, 'progress-residential-orion-extension.zip'));
+  if (!fs.existsSync(path.join(ROOT, 'dist'))) {
+    fs.mkdirSync(path.join(ROOT, 'dist'), { recursive: true });
+  }
   const distZip = path.join(ROOT, 'dist', 'progress-residential-extension.zip');
   const distOrionZip = path.join(ROOT, 'dist', 'progress-residential-orion-extension.zip');
-  if (fs.existsSync(path.join(ROOT, 'dist'))) {
-    fs.copyFileSync(ZIP_PATH, distZip);
-    fs.copyFileSync(ORION_ZIP_PATH, distOrionZip);
-    fs.copyFileSync(ROOT_META_PATH, path.join(ROOT, 'dist', 'extension-meta.json'));
-    fs.copyFileSync(ROOT_UPDATE_XML_PATH, path.join(ROOT, 'dist', 'extension-updates.xml'));
-  }
-} catch (_) {}
+  fs.copyFileSync(ZIP_PATH, distZip);
+  fs.copyFileSync(ORION_ZIP_PATH, distOrionZip);
+  fs.copyFileSync(ROOT_META_PATH, path.join(ROOT, 'dist', 'extension-meta.json'));
+  fs.copyFileSync(ROOT_UPDATE_XML_PATH, path.join(ROOT, 'dist', 'extension-updates.xml'));
+} catch (err) {
+  console.warn('Warning copying release files to dist:', err.message);
+}
 
 // ── 6. Run Extractors Test Suite to Guarantee Zero Breakage ───────────
 console.log('🧪 Running extractor test suite...');

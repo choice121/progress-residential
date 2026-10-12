@@ -152,7 +152,7 @@ def main():
                 "garage_spaces": gar,
                 "has_basement": has_base,
                 "photos_count": len(ik_photos),
-                "url": f"https://choice-properties-site.pages.dev/property.html?id={prop_id}"
+                "url": f"https://progress-residential.pages.dev/property.html?id={prop_id}"
             })
 
     print("\n--------------------------------------------------------------------------------")

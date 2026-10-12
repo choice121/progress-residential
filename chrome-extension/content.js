@@ -12,9 +12,9 @@
   if (window.__CP_CONTENT_LOADED__) return;
   window.__CP_CONTENT_LOADED__ = true;
 
-  var EDGE_URL = (window.CP_CONFIG && window.CP_CONFIG.EDGE_URL) || 'https://tlfmwetmhthpyrytrcfo.supabase.co/functions/v1/receive-pipeline-import';
+  var EDGE_URL = (window.CP_CONFIG && window.CP_CONFIG.EDGE_URL) || 'https://poqgtsltsziuwvzskgth.supabase.co/functions/v1/receive-pipeline-import';
   var SECRET   = (window.CP_CONFIG && window.CP_CONFIG.IMPORT_SECRET) || 'cp_import_7Kx3m9P2w5';
-  var VERSION  = '28.0.0';
+  var VERSION  = '28.0.1';
 
   var IS_MOBILE = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   var PHOTO_BATCH_SIZE = IS_MOBILE ? 4 : 12;
@@ -499,7 +499,7 @@
             </div>
             <div class="cp-success-actions">
               <a class="cp-btn-secondary" id="cp-copy-link-btn" href="javascript:void(0)">Copy Link</a>
-              <a class="cp-btn-primary-sm" id="cp-open-pipeline-btn" target="_blank" href="https://choice-properties-site.pages.dev/admin/pipeline.html">Open Pipeline ↗</a>
+              <a class="cp-btn-primary-sm" id="cp-open-pipeline-btn" target="_blank" href="https://progress-residential.pages.dev/admin/pipeline.html">Open Pipeline ↗</a>
             </div>
           </div>
         </div>
@@ -861,7 +861,7 @@
     // Live Cloud Metadata Sync
     (async function syncWidgetVersion() {
       try {
-        var metaRes = await fetch('https://choice-properties-site.pages.dev/extension-meta.json?_t=' + Date.now(), { cache: 'no-store' });
+        var metaRes = await fetch('https://progress-residential.pages.dev/extension-meta.json?_t=' + Date.now(), { cache: 'no-store' });
         if (metaRes.ok) {
           var meta = await metaRes.json();
           if (meta && meta.version) {
@@ -1201,7 +1201,7 @@
       if (!photo) photo = await downloadViaDirectFetch(url);
       if (!photo) return null;
 
-      var ikRes = await fetch('https://tlfmwetmhthpyrytrcfo.supabase.co/functions/v1/pipeline-photo-upload', {
+      var ikRes = await fetch('https://poqgtsltsziuwvzskgth.supabase.co/functions/v1/pipeline-photo-upload', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

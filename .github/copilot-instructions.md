@@ -48,7 +48,7 @@
 
   ### The shared Supabase database
 
-  Both projects use the **same** Supabase project (`tlfmwetmhthpyrytrcfo`). Table ownership is split by schema:
+  Both projects use the **same** Supabase project (`poqgtsltsziuwvzskgth`). Table ownership is split by schema:
 
   **`public` schema — owned by this project (Choice website)**
   - `properties`, `property_photos`, `landlords`, `applications`, `leases`, `inquiries`, `messages`, `saved_properties`, `sign_events`, `lease_pdf_versions`, etc.

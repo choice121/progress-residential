@@ -67,7 +67,7 @@
     // Live Cloud Check: notify if a newer version is deployed without overwriting the installed version pill
     (async function checkCloudUpdates() {
       try {
-        const metaRes = await fetch('https://choice-properties-site.pages.dev/extension-meta.json?_t=' + Date.now(), { cache: 'no-store' });
+        const metaRes = await fetch('https://progress-residential.pages.dev/extension-meta.json?_t=' + Date.now(), { cache: 'no-store' });
         if (metaRes.ok) {
           const meta = await metaRes.json();
           if (meta && meta.version && versionPill) {

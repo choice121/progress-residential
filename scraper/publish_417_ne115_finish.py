@@ -22,23 +22,23 @@ SB_PIPELINE_HEADERS = {
 
 # Already uploaded to IK in order (photo_01 … photo_17)
 IK_URLS = [
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_01_6-dIbVn1p.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_02_w8tp7mtI0.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_03_kjxBOP-xC.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_04_BM_hp3lME.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_05_SMeksdLLY.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_06_KVvhp1xve.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_07_6NkTsg6rr.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_08_G8Bqyp4NF.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_09_khU1gjGC1.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_10_cmYcbVo5a.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_11_SWYFWGrRL.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_12_F6osdca6E.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_13_3ZLl2GFyYB.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_14_DUJbl68a6.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_15_xWKrvJrf8.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_16_3RsDS2JpP.webp",
-    "https://ik.imagekit.io/21rg7lvzo/properties/PP-2DECB7B3/photo_17_gTJkXbTgi.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_01_6-dIbVn1p.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_02_w8tp7mtI0.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_03_kjxBOP-xC.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_04_BM_hp3lME.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_05_SMeksdLLY.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_06_KVvhp1xve.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_07_6NkTsg6rr.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_08_G8Bqyp4NF.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_09_khU1gjGC1.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_10_cmYcbVo5a.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_11_SWYFWGrRL.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_12_F6osdca6E.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_13_3ZLl2GFyYB.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_14_DUJbl68a6.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_15_xWKrvJrf8.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_16_3RsDS2JpP.webp",
+    "https://ik.imagekit.io/Morganwallen/properties/PP-2DECB7B3/photo_17_gTJkXbTgi.webp",
 ]
 
 PIPELINE_ID = "PP-2DECB7B3"
@@ -197,6 +197,6 @@ print("Inserted {} photo rows.".format(len(photo_rows)))
 print("\n" + "=" * 60)
 print("PUBLISHED: 417 NE 115th St, Oklahoma City, OK 73114")
 print("Property ID: {}".format(prop_id))
-print("URL: https://choice-properties-site.pages.dev/property?id={}".format(prop_id))
+print("URL: https://progress-residential.pages.dev/property?id={}".format(prop_id))
 print("Photos: {}".format(len(IK_URLS)))
 print("=" * 60)

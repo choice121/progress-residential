@@ -31,7 +31,7 @@ from enrichment import (
     _rescore,
 )
 
-SUPABASE_HOST = "tlfmwetmhthpyrytrcfo.supabase.co"
+SUPABASE_HOST = "poqgtsltsziuwvzskgth.supabase.co"
 SUPABASE_URL = f"https://{SUPABASE_HOST}"
 SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE"
 
@@ -228,7 +228,7 @@ def main():
         print(f"   Photo transfer response: HTTP {st} -> {img_res}")
 
         # URL format:
-        site_url = f"https://choice-properties-site.pages.dev/property?id={choice_id}"
+        site_url = f"https://progress-residential.pages.dev/property?id={choice_id}"
         results.append({
             "pipeline_id": pipeline_id,
             "choice_id": choice_id,

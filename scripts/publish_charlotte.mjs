@@ -1,7 +1,7 @@
 import fs from 'fs';
 import crypto from 'crypto';
 
-const SUPABASE_URL = "https://tlfmwetmhthpyrytrcfo.supabase.co";
+const SUPABASE_URL = "https://poqgtsltsziuwvzskgth.supabase.co";
 let SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 if (!SERVICE_ROLE_KEY) {

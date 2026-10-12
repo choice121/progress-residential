@@ -55,12 +55,12 @@ from cjproperties_scraper import scrape_cjproperties, list_states, estimate_rent
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://tlfmwetmhthpyrytrcfo.supabase.co").rstrip("/")
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://poqgtsltsziuwvzskgth.supabase.co").rstrip("/")
 SERVICE_ROLE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 IK_PRIVATE_KEY = os.environ.get("IMAGEKIT_PRIVATE_KEY", "").strip()
-IK_URL_ENDPOINT = os.environ.get("IMAGEKIT_URL_ENDPOINT", "https://ik.imagekit.io/21rg7lvzo").rstrip("/")
+IK_URL_ENDPOINT = os.environ.get("IMAGEKIT_URL_ENDPOINT", "https://ik.imagekit.io/Morganwallen").rstrip("/")
 IK_UPLOAD_URL = "https://upload.imagekit.io/api/v1/files/upload"
-SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://choice-properties-site.pages.dev").rstrip("/")
+SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://progress-residential.pages.dev").rstrip("/")
 
 if not SERVICE_ROLE_KEY:
     sys.exit("ERROR: SUPABASE_SERVICE_ROLE_KEY not set")

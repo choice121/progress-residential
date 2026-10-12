@@ -5,7 +5,7 @@ import pandas as pd
 from homeharvest import scrape_property
 import re
 
-url = 'https://tlfmwetmhthpyrytrcfo.supabase.co'
+url = 'https://poqgtsltsziuwvzskgth.supabase.co'
 key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE'
 headers = {'apikey': key, 'Authorization': f'Bearer {key}'}
 

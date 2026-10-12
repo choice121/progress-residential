@@ -5,7 +5,7 @@ import pandas as pd
 from homeharvest import scrape_property
 import re
 
-url = 'https://tlfmwetmhthpyrytrcfo.supabase.co'
+url = 'https://poqgtsltsziuwvzskgth.supabase.co'
 key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY')
 if not key:
     if os.path.exists('.env.local'):

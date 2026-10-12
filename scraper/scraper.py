@@ -19,7 +19,7 @@ Requirements:
   pip install homeharvest requests
 
 Environment variables (.env file auto-loaded if present):
-  SUPABASE_URL              (default: https://tlfmwetmhthpyrytrcfo.supabase.co)
+  SUPABASE_URL              (default: https://poqgtsltsziuwvzskgth.supabase.co)
   SUPABASE_SERVICE_ROLE_KEY (required)
 
 Zillow note:
@@ -138,7 +138,7 @@ def _get_pipeline_orchestrator():
         return None, str(_pipeline_err)
 
 # ── Config ────────────────────────────────────────────────────────────────────
-SUPABASE_URL     = os.environ.get("SUPABASE_URL", "https://tlfmwetmhthpyrytrcfo.supabase.co").rstrip("/")
+SUPABASE_URL     = os.environ.get("SUPABASE_URL", "https://poqgtsltsziuwvzskgth.supabase.co").rstrip("/")
 SERVICE_ROLE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 
 if not SERVICE_ROLE_KEY:

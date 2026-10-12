@@ -22,7 +22,7 @@ from enrichment import (
     append_apply_cta
 )
 
-SUPABASE_HOST = "tlfmwetmhthpyrytrcfo.supabase.co"
+SUPABASE_HOST = "poqgtsltsziuwvzskgth.supabase.co"
 SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE"
 
 HEADERS = {
@@ -264,7 +264,7 @@ def publish_pipeline_property(pipeline_id, max_rent=1300):
     st, act_res = sb_request("PATCH", f"/rest/v1/properties?id=eq.{urllib.parse.quote(choice_id)}", body=public_patch, is_pipeline=False)
     print(f"4. Activated public.properties record: HTTP {st}")
 
-    url = f"https://choice-properties-site.pages.dev/property?id={choice_id}"
+    url = f"https://progress-residential.pages.dev/property?id={choice_id}"
     return {
         "pipeline_id": pipeline_id,
         "choice_id": choice_id,

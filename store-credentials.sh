@@ -16,7 +16,7 @@ WRITE_SECRET="${WRITE_SECRET:-choice-properties-open-collab-2026}"
 echo "🔐 Storing credentials to Supabase..."
 
 # Call the Edge Function to store credentials
-RESPONSE=$(curl -s -X POST "https://tlfmwetmhthpyrytrcfo.supabase.co/functions/v1/store-credentials" \
+RESPONSE=$(curl -s -X POST "https://poqgtsltsziuwvzskgth.supabase.co/functions/v1/store-credentials" \
   -H "Authorization: Bearer ${SUPABASE_ANON_KEY}" \
   -H "Content-Type: application/json" \
   -d "{

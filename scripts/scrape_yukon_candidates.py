@@ -13,7 +13,7 @@ for path in ['.env', '../.env', 'scraper/.env']:
                     os.environ[k] = v.strip('"\'')
         break
 
-url = os.environ.get('SUPABASE_URL', 'https://tlfmwetmhthpyrytrcfo.supabase.co')
+url = os.environ.get('SUPABASE_URL', 'https://poqgtsltsziuwvzskgth.supabase.co')
 key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY')
 headers = {'apikey': key, 'Authorization': f'Bearer {key}'}
 

@@ -39,7 +39,7 @@ except ImportError:
     sys.exit('homeharvest not installed.  Run: pip install homeharvest')
 
 # ── Supabase (REST API with service role key — works from shell) ─────────────
-SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://tlfmwetmhthpyrytrcfo.supabase.co')
+SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://poqgtsltsziuwvzskgth.supabase.co')
 SERVICE_KEY  = os.getenv('SUPABASE_SERVICE_ROLE_KEY')
 if not SERVICE_KEY:
     sys.exit('ERROR: SUPABASE_SERVICE_ROLE_KEY not found in scraper/.env')

@@ -81,7 +81,7 @@ class TestCountExpectedPhotos:
 
 class TestExtractPropId:
     def test_valid_url(self):
-        url = "https://choice-properties-site.pages.dev/property.html?id=05235e4d-baba-48ba-a0c6-d9cca834dafd"
+        url = "https://progress-residential.pages.dev/property.html?id=05235e4d-baba-48ba-a0c6-d9cca834dafd"
         assert _extract_prop_id(url) == "05235e4d-baba-48ba-a0c6-d9cca834dafd"
 
     def test_ampersand_separator(self):

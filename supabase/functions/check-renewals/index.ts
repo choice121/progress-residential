@@ -95,7 +95,7 @@ Deno.serve(async (req: Request) => {
       // Phase 11 — include deep link to admin lease detail page so the admin
       // can quickly navigate to "Start Renewal" from the action log.
       const adminDetailUrl =
-        `https://choice-properties-site.pages.dev/admin/lease-detail.html?app_id=${r.app_id}`;
+        `https://progress-residential.pages.dev/admin/lease-detail.html?app_id=${r.app_id}`;
       await supabase.from('admin_actions').insert({
         action:      'lease_renewal_nudge_sent',
         target_type: 'application',

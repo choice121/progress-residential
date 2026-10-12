@@ -27,10 +27,10 @@ except ImportError:
 # ---------------------------------------------------------------------------
 # Config from env
 # ---------------------------------------------------------------------------
-SUPABASE_URL       = os.environ.get("SUPABASE_URL", "https://tlfmwetmhthpyrytrcfo.supabase.co").rstrip("/")
+SUPABASE_URL       = os.environ.get("SUPABASE_URL", "https://poqgtsltsziuwvzskgth.supabase.co").rstrip("/")
 SERVICE_ROLE_KEY   = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 IK_PRIVATE_KEY     = os.environ.get("IMAGEKIT_PRIVATE_KEY", "").strip()
-IK_URL_ENDPOINT    = "https://ik.imagekit.io/21rg7lvzo"
+IK_URL_ENDPOINT    = "https://ik.imagekit.io/Morganwallen"
 IK_UPLOAD_URL      = "https://upload.imagekit.io/api/v1/files/upload"
 
 if not SERVICE_ROLE_KEY:
@@ -285,6 +285,6 @@ print("Inserted {} photo rows.".format(len(photo_rows)))
 print("\n" + "=" * 60)
 print("PUBLISHED: 3053 SW 92nd St, Oklahoma City, OK 73159")
 print("Property ID: {}".format(prop_id))
-print("URL: https://choice-properties-site.pages.dev/property?id={}".format(prop_id))
+print("URL: https://progress-residential.pages.dev/property?id={}".format(prop_id))
 print("Photos: {}".format(len(ik_urls)))
 print("=" * 60)

@@ -1,7 +1,7 @@
 import http.client
 import json
 
-conn = http.client.HTTPSConnection('tlfmwetmhthpyrytrcfo.supabase.co', timeout=30)
+conn = http.client.HTTPSConnection('poqgtsltsziuwvzskgth.supabase.co', timeout=30)
 headers = {
     'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE',
     'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE',
@@ -11,7 +11,7 @@ headers = {
 }
 
 # 1. Fetch all published properties in Kansas City
-conn_pub = http.client.HTTPSConnection('tlfmwetmhthpyrytrcfo.supabase.co', timeout=30)
+conn_pub = http.client.HTTPSConnection('poqgtsltsziuwvzskgth.supabase.co', timeout=30)
 conn_pub.request('GET', '/rest/v1/properties?city=ilike.*Kansas*&select=*&order=created_at.asc', headers=headers)
 resp_pub = conn_pub.getresponse()
 raw_pub = resp_pub.read().decode()
@@ -35,7 +35,7 @@ pipeline_headers = dict(headers)
 pipeline_headers['Accept-Profile'] = 'pipeline'
 pipeline_headers['Content-Profile'] = 'pipeline'
 
-conn = http.client.HTTPSConnection('tlfmwetmhthpyrytrcfo.supabase.co', timeout=30)
+conn = http.client.HTTPSConnection('poqgtsltsziuwvzskgth.supabase.co', timeout=30)
 conn.request('GET', '/rest/v1/pipeline_properties?city=ilike.*Kansas*&select=*&order=monthly_rent.asc', headers=pipeline_headers)
 resp = conn.getresponse()
 raw = resp.read().decode()

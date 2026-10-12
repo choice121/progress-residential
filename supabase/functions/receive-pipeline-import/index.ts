@@ -75,7 +75,7 @@ Deno.serve(async (req) => {
     return permissiveJsonErr(401, 'Invalid import secret', req);
   }
 
-  const SUPABASE_URL = Deno.env.get('SUPABASE_URL') || 'https://tlfmwetmhthpyrytrcfo.supabase.co';
+  const SUPABASE_URL = Deno.env.get('SUPABASE_URL') || 'https://poqgtsltsziuwvzskgth.supabase.co';
   const FALLBACK_SERVICE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE';
   const SERVICE_KEY  = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') || Deno.env.get('SERVICE_ROLE_KEY') || FALLBACK_SERVICE_KEY;
   const adminClient  = createClient(SUPABASE_URL, SERVICE_KEY, {

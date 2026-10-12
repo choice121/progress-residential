@@ -33,7 +33,7 @@ with open(".env.local") as f:
 SUPABASE_URL = env["SUPABASE_URL"]
 SUPABASE_KEY = env["SUPABASE_SERVICE_ROLE_KEY"]
 IK_PRIVATE_KEY = env.get("IMAGEKIT_PRIVATE_KEY", "private_0EEkHXTzdRqJ++giVS30rF+qDAs=")
-IK_ENDPOINT = env.get("IMAGEKIT_URL_ENDPOINT", "https://ik.imagekit.io/21rg7lvzo").rstrip("/")
+IK_ENDPOINT = env.get("IMAGEKIT_URL_ENDPOINT", "https://ik.imagekit.io/Morganwallen").rstrip("/")
 LANDLORD_ID = "b8d3aea0-f466-49f2-ac07-2b2b40793cc9"
 TODAY = "2026-09-08"
 
@@ -585,7 +585,7 @@ def main():
             "beds": beds,
             "baths": baths,
             "id": prop_id,
-            "link": f"https://choice-properties-site.pages.dev/property.html?id={prop_id}"
+            "link": f"https://progress-residential.pages.dev/property.html?id={prop_id}"
         })
 
     print("\n" + "="*70)

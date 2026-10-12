@@ -5,7 +5,7 @@
 
 import { createClient } from "@supabase/supabase-js"
 
-const supabaseUrl = "https://tlfmwetmhthpyrytrcfo.supabase.co"
+const supabaseUrl = "https://poqgtsltsziuwvzskgth.supabase.co"
 const serviceRoleKey = process.argv[2]
 
 if (!serviceRoleKey) {

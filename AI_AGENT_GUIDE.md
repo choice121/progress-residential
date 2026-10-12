@@ -204,8 +204,8 @@ using lightweight OCR or perceptual hashing.
 
 ```
 Published URLs:
-  https://choice-properties-site.pages.dev/rent/tx/dallas/2br-single-family-abc123/
-  https://choice-properties-site.pages.dev/rent/tx/dallas/2br-single-family-def456/
+  https://progress-residential.pages.dev/rent/tx/dallas/2br-single-family-abc123/
+  https://progress-residential.pages.dev/rent/tx/dallas/2br-single-family-def456/
 ```
 
 Extract all lines starting with `https://` under "Published URLs:".
@@ -221,7 +221,7 @@ Output:
 {
   "ok": true,
   "published_urls": [
-    "https://choice-properties-site.pages.dev/rent/tx/dallas/2br-single-family-abc123/",
+    "https://progress-residential.pages.dev/rent/tx/dallas/2br-single-family-abc123/",
     ...
   ],
   "stats": { "published": 10, ... },
@@ -280,10 +280,10 @@ To get the best results:
 All credentials are in `scraper/.env` (already configured):
 
 ```
-SUPABASE_URL=https://tlfmwetmhthpyrytrcfo.supabase.co
+SUPABASE_URL=https://poqgtsltsziuwvzskgth.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=...
 IMAGEKIT_PRIVATE_KEY=...
-IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/21rg7lvzo
+IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/Morganwallen
 ```
 
 Never commit or expose these. The runner reads them automatically.
@@ -334,8 +334,8 @@ AI (you):
   4. Parse JSON output for published_urls
   5. Return to user:
      "Here are your 10 live listings:
-      - https://choice-properties-site.pages.dev/rent/tx/dallas/2br-single-family-abc123/
-      - https://choice-properties-site.pages.dev/rent/tx/dallas/2br-single-family-def456/
+      - https://progress-residential.pages.dev/rent/tx/dallas/2br-single-family-abc123/
+      - https://progress-residential.pages.dev/rent/tx/dallas/2br-single-family-def456/
       ..."
 ```
 

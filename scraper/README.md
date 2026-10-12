@@ -80,7 +80,7 @@ Create a `.env` file (auto-loaded on every run):
 
 ```bash
 # scraper/.env  or  project root .env
-SUPABASE_URL=https://tlfmwetmhthpyrytrcfo.supabase.co
+SUPABASE_URL=https://poqgtsltsziuwvzskgth.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=eyJ...
 ```
 

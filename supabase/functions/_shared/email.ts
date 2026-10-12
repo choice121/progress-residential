@@ -103,7 +103,7 @@ const EMAIL_BASE_CSS = `
   }
 `;
 
-const POLICY_BASE_URL = 'https://choice-properties-site.pages.dev';
+const POLICY_BASE_URL = 'https://progress-residential.pages.dev';
 
 const EMAIL_FOOTER = `
   <div class="email-footer">

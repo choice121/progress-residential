@@ -15,7 +15,7 @@ const { URL } = require('url');
 const SUPABASE_URL      = process.env.SUPABASE_URL;
 const SB_KEY            = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const IK_PRIVATE_KEY    = process.env.IMAGEKIT_PRIVATE_KEY;
-const IK_ENDPOINT       = process.env.IMAGEKIT_URL || 'https://ik.imagekit.io/21rg7lvzo';
+const IK_ENDPOINT       = process.env.IMAGEKIT_URL || 'https://ik.imagekit.io/Morganwallen';
 const LANDLORD_ID       = 'b8d3aea0-f466-49f2-ac07-2b2b40793cc9';
 
 if (!SUPABASE_URL || !SB_KEY || !IK_PRIVATE_KEY) {

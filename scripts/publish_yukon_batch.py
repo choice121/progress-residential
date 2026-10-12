@@ -6,7 +6,7 @@ import time
 import http.client
 from datetime import datetime
 
-SUPABASE_HOST = "tlfmwetmhthpyrytrcfo.supabase.co"
+SUPABASE_HOST = "poqgtsltsziuwvzskgth.supabase.co"
 SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE"
 LANDLORD_ID = "b8d3aea0-f466-49f2-ac07-2b2b40793cc9" # Choice Properties
 
@@ -228,10 +228,10 @@ def main():
             "bathrooms": int(baths) if baths.is_integer() else baths,
             "property_type": prop_type,
             "photos_count": len(photos),
-            "url": f"https://choice-properties-site.pages.dev/property.html?id={prop_id}"
+            "url": f"https://progress-residential.pages.dev/property.html?id={prop_id}"
         }
         published.append(pub_entry)
-        print(f"  ✅ SUCCESS: {address} published -> https://choice-properties-site.pages.dev/property.html?id={prop_id}")
+        print(f"  ✅ SUCCESS: {address} published -> https://progress-residential.pages.dev/property.html?id={prop_id}")
         time.sleep(0.3)
 
     print("\n" + "=" * 70)

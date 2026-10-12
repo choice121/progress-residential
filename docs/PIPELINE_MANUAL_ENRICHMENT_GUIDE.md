@@ -146,7 +146,7 @@ INSERT INTO public.property_photos (
 
 After publishing, the AI assistant must present the published properties in the mandatory format:
 
-1. {Address}, {City}, {State} {Zip} (${Rent}/mo | {Beds} Bed / {Baths} Bath) — https://choice-properties-site.pages.dev/property.html?id={property_id}
+1. {Address}, {City}, {State} {Zip} (${Rent}/mo | {Beds} Bed / {Baths} Bath) — https://progress-residential.pages.dev/property.html?id={property_id}
 
 Example:
-1. 5914 Wilkes Dr, Fort Worth, TX 76119 ($1,350/mo | 3 Bed / 2 Bath) — https://choice-properties-site.pages.dev/property.html?id=c054a5e9-fe6a-4c2d-a1dd-08c15744bc07
+1. 5914 Wilkes Dr, Fort Worth, TX 76119 ($1,350/mo | 3 Bed / 2 Bath) — https://progress-residential.pages.dev/property.html?id=c054a5e9-fe6a-4c2d-a1dd-08c15744bc07

@@ -1,13 +1,13 @@
 // Publishes the 4 Zillow properties added via Orion, then transfers photos to ImageKit.
 // Uses the pipeline_publish RPC + import-pipeline-photos edge function.
-const PROJECT_REF = 'tlfmwetmhthpyrytrcfo';
+const PROJECT_REF = 'poqgtsltsziuwvzskgth';
 const TOKEN = process.env.SUPABASE_ACCESS_TOKEN || (process.argv.find(a => a.startsWith('--token=')) || '').split('=')[1];
 if (!TOKEN) {
   console.error('SUPABASE_ACCESS_TOKEN env var or --token= arg is required');
   process.exit(1);
 }
 
-const SUPABASE_URL = 'https://tlfmwetmhthpyrytrcfo.supabase.co';
+const SUPABASE_URL = 'https://poqgtsltsziuwvzskgth.supabase.co';
 const SERVICE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || (process.argv.find(a => a.startsWith('--service-key=')) || '').split('=')[1];
 if (!SERVICE_KEY) {
   console.error('SUPABASE_SERVICE_ROLE_KEY env var or --service-key= arg is required');

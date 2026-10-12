@@ -74,7 +74,7 @@ print("Fixing 1675 Norma Rd photos in DB...")
 sb_request("DELETE", f"property_photos?property_id=eq.{norma_id}")
 norma_photos = []
 for i in range(11):
-    u = f"https://ik.imagekit.io/21rg7lvzo/properties/columbus-oh-43229/columbus_43229_afd223fe_{i:02d}.jpg"
+    u = f"https://ik.imagekit.io/Morganwallen/properties/columbus-oh-43229/columbus_43229_afd223fe_{i:02d}.jpg"
     norma_photos.append({
         "property_id": norma_id,
         "url": u,

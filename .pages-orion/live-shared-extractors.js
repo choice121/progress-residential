@@ -1,11 +1,11 @@
 // ============================================================
-// Choice Properties — Multi-site Listing Extractor Registry
+// Progress Residential — Multi-site Listing Extractor Registry
 // GENERATED FILE — DO NOT EDIT DIRECTLY.
 // Edit src/extractors/shared-extractors.js and run:
 //   node scripts/build-extractors.js
 // ============================================================
 // ============================================================
-// Choice Properties — Canonical Multi-site Listing Extractor
+// Progress Residential — Canonical Multi-site Listing Extractor
 // ============================================================
 // THIS IS THE SINGLE SOURCE OF TRUTH for all listing extraction.
 // Supported sites: Zillow, Realtor.com, Apartments.com, Redfin, Opendoor,

@@ -1,5 +1,5 @@
 // Verifies the 3 published Zillow properties are active with photos
-const PROJECT_REF = 'tlfmwetmhthpyrytrcfo';
+const PROJECT_REF = 'poqgtsltsziuwvzskgth';
 const TOKEN = process.env.SUPABASE_ACCESS_TOKEN || (process.argv.find(a => a.startsWith('--token=')) || '').split('=')[1];
 if (!TOKEN) {
   console.error('SUPABASE_ACCESS_TOKEN env var or --token= arg is required');

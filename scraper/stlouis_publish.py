@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from scraper import _load_dotenv
 _load_dotenv()
 
-SUPABASE_URL     = "https://tlfmwetmhthpyrytrcfo.supabase.co"
+SUPABASE_URL     = "https://poqgtsltsziuwvzskgth.supabase.co"
 SERVICE_ROLE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 IK_PRIVATE_KEY   = os.environ.get("IMAGEKIT_PRIVATE_KEY", "")
 IK_ENDPOINT      = os.environ.get("IMAGEKIT_URL_ENDPOINT", "").rstrip("/")
@@ -415,7 +415,7 @@ def activate(property_id):
 
 
 def prop_url(pid):
-    return f"https://choice-properties-site.pages.dev/property.html?id={pid}"
+    return f"https://progress-residential.pages.dev/property.html?id={pid}"
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────

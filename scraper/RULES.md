@@ -37,7 +37,7 @@
 | Security deposit = 1× rent (DB only) | `security_deposit` = `monthly_rent` in DB record; NEVER mentioned in descriptions |
 | Application fee = $50 | `application_fee` field = 50, description says "Application Fee: $50." |
 | Apply CTA at end of description | Ends with "Apply now through Choice Properties…" or similar |
-| All photos on ImageKit | `property_photos.url` = `https://ik.imagekit.io/21rg7lvzo/…` |
+| All photos on ImageKit | `property_photos.url` = `https://ik.imagekit.io/Morganwallen/…` |
 | Photos in original order | First photo = hero / featured image |
 
 ---
@@ -94,10 +94,10 @@ When you call `PipelineOrchestrator.run(criteria)`, the pipeline automatically:
 All credentials are in `scraper/.env` — already committed, no setup needed.
 
 ```
-SUPABASE_URL=https://tlfmwetmhthpyrytrcfo.supabase.co
+SUPABASE_URL=https://poqgtsltsziuwvzskgth.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=...
 IMAGEKIT_PRIVATE_KEY=...
-IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/21rg7lvzo
+IMAGEKIT_URL_ENDPOINT=https://ik.imagekit.io/Morganwallen
 ```
 
 ---

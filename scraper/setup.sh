@@ -39,7 +39,7 @@ echo "Building scraper/.env ..."
 echo ""
 
 # SUPABASE_URL — has a known default
-SUPABASE_URL_VAL="${SUPABASE_URL:-https://tlfmwetmhthpyrytrcfo.supabase.co}"
+SUPABASE_URL_VAL="${SUPABASE_URL:-https://poqgtsltsziuwvzskgth.supabase.co}"
 
 # SUPABASE_SERVICE_ROLE_KEY — required
 if [ -n "$SUPABASE_SERVICE_ROLE_KEY" ]; then
@@ -60,7 +60,7 @@ fi
 RESEND_VAL="${RESEND_API_KEY:-}"
 NOTIFY_VAL="${NOTIFY_EMAIL:-}"
 FROM_VAL="${FROM_EMAIL:-scraper@choiceproperties.com}"
-ADMIN_VAL="${ADMIN_URL:-https://choice-properties-site.pages.dev/admin/pipeline.html}"
+ADMIN_VAL="${ADMIN_URL:-https://progress-residential.pages.dev/admin/pipeline.html}"
 
 # ── Write the file ─────────────────────────────────────────────────────────────
 cat > "$ENV_FILE" <<EOF
@@ -84,7 +84,7 @@ echo "Verifying Supabase connection..."
 HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
   -H "apikey: $SERVICE_KEY_VAL" \
   -H "Authorization: Bearer $SERVICE_KEY_VAL" \
-  "https://tlfmwetmhthpyrytrcfo.supabase.co/rest/v1/")
+  "https://poqgtsltsziuwvzskgth.supabase.co/rest/v1/")
 
 if [ "$HTTP_STATUS" = "200" ] || [ "$HTTP_STATUS" = "404" ]; then
   echo "✅  Supabase connection verified (HTTP $HTTP_STATUS)"

@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const PROJECT_REF = 'tlfmwetmhthpyrytrcfo'; // Choice project
+const PROJECT_REF = 'poqgtsltsziuwvzskgth'; // Choice project
 const TOKEN = process.env.SUPABASE_ACCESS_TOKEN;
 if (!TOKEN) {
   console.error('SUPABASE_ACCESS_TOKEN env var is required');

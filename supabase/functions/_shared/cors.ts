@@ -12,7 +12,7 @@
 // browser CORS check to fail safely.
 // ============================================================
 
-const PRODUCTION_ORIGIN = 'https://choice-properties-site.pages.dev';
+const PRODUCTION_ORIGIN = 'https://progress-residential.pages.dev';
 
 const STATIC_ALLOWED = new Set<string>([
   PRODUCTION_ORIGIN,
@@ -23,8 +23,8 @@ const STATIC_ALLOWED = new Set<string>([
   'http://127.0.0.1:8000',
 ]);
 
-// Matches `https://<hash>.choice-properties-site.pages.dev` and
-// branch-deploy aliases like `https://feature-foo.choice-properties-site.pages.dev`.
+// Matches `https://<hash>.progress-residential.pages.dev` and
+// branch-deploy aliases like `https://feature-foo.progress-residential.pages.dev`.
 const PREVIEW_ORIGIN_RE =
   /^https:\/\/[a-z0-9-]+\.choice-properties-site\.pages\.dev$/i;
 

@@ -127,7 +127,7 @@ export async function onRequest(context) {
     
     if (propId) {
       try {
-        const supabaseUrl = "https://tlfmwetmhthpyrytrcfo.supabase.co";
+        const supabaseUrl = "https://poqgtsltsziuwvzskgth.supabase.co";
         const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE";
         
         const fetchRes = await fetch(`${supabaseUrl}/rest/v1/properties?id=eq.${propId}&select=title,monthly_rent,property_photos(url,display_order)`, {

@@ -15,7 +15,7 @@ for path in ['.env', '../.env', 'scraper/.env']:
                     os.environ[k] = v.strip('"\'')
         break
 
-SUPABASE_URL = os.environ.get('SUPABASE_URL', 'https://tlfmwetmhthpyrytrcfo.supabase.co')
+SUPABASE_URL = os.environ.get('SUPABASE_URL', 'https://poqgtsltsziuwvzskgth.supabase.co')
 SERVICE_ROLE_KEY = os.environ.get('SUPABASE_SERVICE_ROLE_KEY')
 LANDLORD_ID = "b8d3aea0-f466-49f2-ac07-2b2b40793cc9" # Choice Properties
 
@@ -230,7 +230,7 @@ for idx, p in enumerate(all_to_publish, 1):
         "sqft": sqft,
         "property_type": prop_type,
         "photos_count": len(clean_photos),
-        "url": f"https://choice-properties-site.pages.dev/property.html?id={prop_id}"
+        "url": f"https://progress-residential.pages.dev/property.html?id={prop_id}"
     }
     published_results.append(item_info)
     print(f"[{idx}/8] Published: {address}, {city}, {state} {zip_code} (${rent}/mo | {beds} Bed / {baths:g} Bath) -> {item_info['url']}")

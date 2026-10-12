@@ -19,7 +19,7 @@ try:
 except Exception:
     pass
 
-SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://tlfmwetmhthpyrytrcfo.supabase.co").rstrip("/")
+SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://poqgtsltsziuwvzskgth.supabase.co").rstrip("/")
 SERVICE_KEY  = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 
 PIPELINE_IDS = [
@@ -51,7 +51,7 @@ EDGE_HEADERS = {
     "Content-Type":  "application/json",
 }
 
-SITE_BASE = "https://choice-properties-site.pages.dev/property"
+SITE_BASE = "https://progress-residential.pages.dev/property"
 
 
 def publish_one(pipeline_id, dry_run=False):

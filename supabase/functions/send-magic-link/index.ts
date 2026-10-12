@@ -95,7 +95,7 @@ Deno.serve(async (req) => {
     });
   }
 
-  const SITE_URL = (Deno.env.get("SITE_URL") || "https://choice-properties-site.pages.dev").replace(/\/$/, "");
+  const SITE_URL = (Deno.env.get("SITE_URL") || "https://progress-residential.pages.dev").replace(/\/$/, "");
   const redirectTo = body.redirectTo || `${SITE_URL}/tenant/portal.html`;
 
   try {

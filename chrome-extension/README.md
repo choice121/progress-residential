@@ -1,6 +1,6 @@
-# Choice Properties — Universal Chrome Extension (v28.0.0)
+# Progress Residential — Universal Chrome Extension (v28.0.1)
 
-A browser extension that allows Choice Properties agents to save rental listings directly from **8 major rental portals** into the Choice Properties staging pipeline with 1 click.
+A browser extension that allows Progress Residential agents to save rental listings directly from **8 major rental portals** into the Progress Residential staging pipeline with 1 click.
 
 ---
 
@@ -45,7 +45,7 @@ A browser extension that allows Choice Properties agents to save rental listings
 ## Installation
 
 ### Method A: Install ZIP in Developer Mode
-1. Download `choice-properties-extension.zip` from [Choice Properties Site](https://choice-properties-site.pages.dev/choice-properties-extension.zip).
+1. Download `choice-properties-extension.zip` from [Choice Properties Site](https://progress-residential.pages.dev/choice-properties-extension.zip).
 2. Unzip to a local folder.
 3. Open Chrome and navigate to `chrome://extensions`.
 4. Enable **Developer mode** (top-right toggle).

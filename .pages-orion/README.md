@@ -45,7 +45,7 @@ The extension icon appears in your Chrome toolbar.
    *(Zillow, Realtor.com, Apartments.com, Redfin, Opendoor, Progress Residential, CJ Real Estate, or Invitation Homes)*
 2. Click the purple **↓ Save to Pipeline** button (bottom-right corner)
 3. Button turns green: "✓ Saved! 24 photos · San Francisco · Q:88/100"
-4. Open your [admin pipeline](https://choice-properties-site.pages.dev/admin/pipeline.html) to review and publish
+4. Open your [admin pipeline](https://progress-residential.pages.dev/admin/pipeline.html) to review and publish
 
 ---
 

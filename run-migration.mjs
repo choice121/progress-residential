@@ -18,7 +18,7 @@ if (!token) {
 }
 
 // Extract project URL from token or use environment
-const supabaseUrl = process.env.SUPABASE_URL || 'https://tlfmwetmhthpyrytrcfo.supabase.co'
+const supabaseUrl = process.env.SUPABASE_URL || 'https://poqgtsltsziuwvzskgth.supabase.co'
 
 console.log('🔧 Running database migration...')
 

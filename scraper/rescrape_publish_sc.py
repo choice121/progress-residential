@@ -285,7 +285,7 @@ def process_listing(listing):
           f"available_date={enriched.get('available_date')} | "
           f"min_lease={enriched.get('minimum_lease_months')} | "
           f"quality={enriched.get('data_quality_score')}")
-    print(f"  🔗  https://choice-properties-site.pages.dev/property?id={cpid}")
+    print(f"  🔗  https://progress-residential.pages.dev/property?id={cpid}")
     return True
 
 

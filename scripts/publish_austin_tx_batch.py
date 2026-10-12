@@ -36,10 +36,10 @@ if os.path.exists(env_path):
                 k, v = line.strip().split('=', 1)
                 env[k] = v
 
-SUPABASE_URL = env.get('SUPABASE_URL', 'https://tlfmwetmhthpyrytrcfo.supabase.co')
+SUPABASE_URL = env.get('SUPABASE_URL', 'https://poqgtsltsziuwvzskgth.supabase.co')
 SUPABASE_KEY = env.get('SUPABASE_SERVICE_ROLE_KEY', '')
 IMAGEKIT_KEY = env.get('IMAGEKIT_PRIVATE_KEY', '')
-IMAGEKIT_ENDPOINT = env.get('IMAGEKIT_URL_ENDPOINT', 'https://ik.imagekit.io/21rg7lvzo')
+IMAGEKIT_ENDPOINT = env.get('IMAGEKIT_URL_ENDPOINT', 'https://ik.imagekit.io/Morganwallen')
 LANDLORD_ID = '0e5eeed2-316e-4739-a694-e5058888208e'
 
 SB_HEADERS = {
@@ -968,7 +968,7 @@ def main():
             print(f"  -> {len(existing_photos)} photos already present in property_photos table")
         
         # 4. Construct live URL
-        live_url = f"https://choice-properties-site.pages.dev/property.html?id={prop_id}"
+        live_url = f"https://progress-residential.pages.dev/property.html?id={prop_id}"
         formatted_line = f"{idx}. {prop['address']}, {prop['city']}, {prop['state']} {prop['zip']} (${prop['monthly_rent']:,}/mo | {prop['bedrooms']} Bed / {prop['bathrooms']} Bath) — {live_url}"
         published_links.append(formatted_line)
         print(f"  -> LIVE: {live_url}")

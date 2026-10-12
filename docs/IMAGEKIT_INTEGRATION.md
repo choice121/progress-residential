@@ -32,7 +32,7 @@ At current usage rates, Choice Properties can onboard **over 7,400 additional pr
 1. **Universal Credential Resolution**:
    Both Python (`scraper/imagekit_upload.py`, `scraper/pipeline.py`) and Node.js (`scripts/migrate_hotlinks_to_imagekit.mjs`) automatically resolve ImageKit secrets from any common alias:
    - `IMAGEKIT_PRIVATE_KEY` or `Imagekitprivate` or `IMAGEKIT_PRIVATE`
-   - `IMAGEKIT_URL_ENDPOINT` or `IMAGEKIT_URL` (defaulting to `https://ik.imagekit.io/21rg7lvzo`)
+   - `IMAGEKIT_URL_ENDPOINT` or `IMAGEKIT_URL` (defaulting to `https://ik.imagekit.io/Morganwallen`)
 
 2. **Automatic Pre-Staging Upload**:
    When `python scraper/scraper.py` runs, it calls `imagekit_upload.upload_images()` for every listing before staging:

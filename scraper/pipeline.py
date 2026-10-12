@@ -169,9 +169,9 @@ IK_PRIVATE_KEY = (
 IK_URL_ENDPOINT = (
     os.environ.get("IMAGEKIT_URL_ENDPOINT")
     or os.environ.get("IMAGEKIT_URL")
-    or "https://ik.imagekit.io/21rg7lvzo"
+    or "https://ik.imagekit.io/Morganwallen"
 ).rstrip("/")
-SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://choice-properties-site.pages.dev").rstrip("/")
+SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://progress-residential.pages.dev").rstrip("/")
 
 IK_UPLOAD_URL = "https://upload.imagekit.io/api/v1/files/upload"
 

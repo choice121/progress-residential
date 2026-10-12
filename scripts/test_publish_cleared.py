@@ -1,7 +1,7 @@
 import http.client
 import json
 
-conn = http.client.HTTPSConnection('tlfmwetmhthpyrytrcfo.supabase.co', timeout=30)
+conn = http.client.HTTPSConnection('poqgtsltsziuwvzskgth.supabase.co', timeout=30)
 headers = {
     'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE',
     'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE',
@@ -20,7 +20,7 @@ resp.read()
 headers_pub = dict(headers)
 del headers_pub['Accept-Profile']
 del headers_pub['Content-Profile']
-conn2 = http.client.HTTPSConnection('tlfmwetmhthpyrytrcfo.supabase.co', timeout=30)
+conn2 = http.client.HTTPSConnection('poqgtsltsziuwvzskgth.supabase.co', timeout=30)
 conn2.request('POST', '/rest/v1/rpc/pipeline_publish', body=json.dumps({"p_id": "PP-22E7981C", "p_landlord_id": None}), headers=headers_pub)
 resp2 = conn2.getresponse()
 print("RPC status:", resp2.status)

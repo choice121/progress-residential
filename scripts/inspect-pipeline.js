@@ -1,5 +1,5 @@
 // Inspects the pipeline_properties to assess quality, images, and status
-const PROJECT_REF = 'tlfmwetmhthpyrytrcfo';
+const PROJECT_REF = 'poqgtsltsziuwvzskgth';
 const TOKEN = process.env.SUPABASE_ACCESS_TOKEN || (process.argv.find(a => a.startsWith('--token=')) || '').split('=')[1];
 if (!TOKEN) {
   console.error('SUPABASE_ACCESS_TOKEN env var or --token= arg is required');

@@ -10,7 +10,7 @@ This file covers everything a new developer or AI assistant needs to get fully o
 |---|---|---|
 | **Python Scraper** | `scraper/` | **The main tool.** Scrapes Realtor.com, enriches listings, publishes to the live site. Run from Replit. |
 | **Chrome Extension** | `chrome-extension/` | Secondary tool. Adds a "Save to Pipeline" button on open listing pages in your browser. |
-| **Live site** | Cloudflare Pages | https://choice-properties-site.pages.dev — NOT hosted on Replit. Replit only runs the scraper. |
+| **Live site** | Cloudflare Pages | https://progress-residential.pages.dev — NOT hosted on Replit. Replit only runs the scraper. |
 
 > **AI assistants:** Read `replit.md` first. It has the full project overview, architecture diagram, and scraping instructions. Do not treat this as a Chrome extension project.
 
@@ -71,7 +71,7 @@ Scripts that run on Replit use the Supabase service role key, which is NOT commi
 | Supabase URL | `scraper/.env` | Project endpoint |
 | Supabase service role key | `scraper/.env` | Full DB access. Used by scraper only. |
 | ImageKit private key | `scraper/.env` | Used by scraper for photo uploads |
-| ImageKit URL endpoint | `scraper/.env` | `https://ik.imagekit.io/21rg7lvzo` |
+| ImageKit URL endpoint | `scraper/.env` | `https://ik.imagekit.io/Morganwallen` |
 | Supabase anon key | `chrome-extension/config.js` | Public/safe. Protected by RLS. |
 | Import secret | `chrome-extension/config.js` | Sent as `x-import-secret` header to the Edge Function |
 | ImageKit public key | `chrome-extension/config.js` | Client-side upload auth |
@@ -116,5 +116,5 @@ Scripts that run on Replit use the Supabase service role key, which is NOT commi
 - **`scraper/scraper.py` is internal.** Don't call it directly — it's invoked by `pipeline.py` automatically.
 - **The pipeline enforces all platform rules automatically.** You cannot skip watermark detection, ImageKit upload, fee normalization, etc. — they are not optional.
 - **Published listing URLs use the slug format:**
-  `https://choice-properties-site.pages.dev/rent/<state>/<city>/<beds>br-<type>-<id>/`
+  `https://progress-residential.pages.dev/rent/<state>/<city>/<beds>br-<type>-<id>/`
   The old `property.html?id=` format still works (301 redirect) but the slug URL is canonical.

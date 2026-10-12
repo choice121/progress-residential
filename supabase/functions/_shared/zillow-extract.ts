@@ -1,5 +1,5 @@
 // ============================================================
-// Choice Properties — Zillow Extractor (Deno/TypeScript)
+// Progress Residential — Zillow Extractor (Deno/TypeScript)
 // GENERATED FILE — DO NOT EDIT DIRECTLY.
 // Edit src/extractors/shared-extractors.js and run:
 //   node scripts/build-extractors.js

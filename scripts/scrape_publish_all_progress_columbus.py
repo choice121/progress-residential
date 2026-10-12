@@ -8,7 +8,7 @@ import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
-SUPABASE_HOST = "tlfmwetmhthpyrytrcfo.supabase.co"
+SUPABASE_HOST = "poqgtsltsziuwvzskgth.supabase.co"
 SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE"
 LANDLORD_ID = "b8d3aea0-f466-49f2-ac07-2b2b40793cc9"
 
@@ -262,7 +262,7 @@ def process_property(u, existing_addrs, lock, today):
         "bedrooms": beds,
         "bathrooms": baths,
         "photos_count": len(photos),
-        "url": f"https://choice-properties-site.pages.dev/property.html?id={prop_id}"
+        "url": f"https://progress-residential.pages.dev/property.html?id={prop_id}"
     }
     return pub_info, "published"
 

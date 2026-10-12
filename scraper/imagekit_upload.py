@@ -69,7 +69,7 @@ def _get_credentials():
     endpoint = (
         os.environ.get("IMAGEKIT_URL_ENDPOINT")
         or os.environ.get("IMAGEKIT_URL")
-        or "https://ik.imagekit.io/21rg7lvzo"
+        or "https://ik.imagekit.io/Morganwallen"
     ).strip().rstrip("/")
     return key, endpoint
 

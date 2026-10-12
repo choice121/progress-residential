@@ -1993,7 +1993,7 @@ async function executeAdminDeleteProperty(prop, triggerBtn) {
     // Tier 3: Direct REST cascade fallback
     if (!delRes || !delRes.ok) {
       try {
-        const supaUrl = (typeof CONFIG !== 'undefined' && CONFIG?.SUPABASE_URL ? CONFIG.SUPABASE_URL : 'https://tlfmwetmhthpyrytrcfo.supabase.co').replace(/\/$/, '');
+        const supaUrl = (typeof CONFIG !== 'undefined' && CONFIG?.SUPABASE_URL ? CONFIG.SUPABASE_URL : 'https://poqgtsltsziuwvzskgth.supabase.co').replace(/\/$/, '');
         const supaKey = (typeof CONFIG !== 'undefined' && CONFIG?.SUPABASE_ANON_KEY) || '';
         let authToken = supaKey;
         try {
