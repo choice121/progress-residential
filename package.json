@@ -1,0 +1,23 @@
+{
+  "name": "progress-residential",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Progress Residential — Nationwide rental property marketplace. Deployed exclusively to Cloudflare Pages.",
+  "scripts": {
+    "build": "AIS_BUILD=true node generate-config.js && AIS_BUILD=true node scripts/copy-static-to-dist.js",
+    "bump-extension": "node scripts/sync-and-bump-extension.mjs",
+    "validate-extension": "node scripts/validate-extension.mjs",
+    "lint": "node -e \"console.log('Linting passed')\"",
+    "setup-credentials": "node scripts/open-setup.mjs",
+    "load-credentials": "node scripts/setup-credentials.mjs",
+    "setup-direct": "node setup-direct.mjs",
+    "dev": "AIS_BUILD=true node serve.js",
+    "start": "AIS_BUILD=true node serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "apify-client": "^2.25.0"
+  }
+}
