@@ -63,12 +63,12 @@ function buildNudgeEmail(email: string, token: string, hoursLeft: number, proper
 <div style="max-width:600px;margin:32px auto;background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
 
   <!-- Header -->
-  <div style="background:#0a0f1e;padding:24px 32px;display:flex;align-items:center;gap:12px;">
-    <div style="width:36px;height:36px;background:#2563eb;border-radius:8px;display:flex;align-items:center;justify-content:center;">
-      <span style="color:#fff;font-size:18px;font-weight:800;">C</span>
+  <div style="background:#201f21;padding:24px 32px;display:flex;align-items:center;gap:12px;">
+    <div style="width:36px;height:36px;background:#004751;border-radius:8px;display:flex;align-items:center;justify-content:center;">
+      <span style="color:#fff;font-size:18px;font-weight:800;">P</span>
     </div>
     <div>
-      <div style="color:#ffffff;font-size:17px;font-weight:700;letter-spacing:-0.3px;">Choice Properties</div>
+      <div style="color:#ffffff;font-size:17px;font-weight:700;letter-spacing:-0.3px;">Progress Residential</div>
       <div style="color:#94a3b8;font-size:12px;">Rental Application</div>
     </div>
   </div>
@@ -94,7 +94,7 @@ function buildNudgeEmail(email: string, token: string, hoursLeft: number, proper
     <!-- Resume CTA -->
     <div style="text-align:center;margin:28px 0;">
       <a href="${resumeUrl}"
-         style="display:inline-block;background:#2563eb;color:#ffffff;font-size:15px;font-weight:700;padding:14px 36px;border-radius:8px;text-decoration:none;letter-spacing:-0.2px;">
+         style="display:inline-block;background:#004751;color:#ffffff;font-size:15px;font-weight:700;padding:14px 36px;border-radius:8px;text-decoration:none;letter-spacing:-0.2px;">
         Continue My Application →
       </a>
       <p style="margin:12px 0 0;font-size:12px;color:#94a3b8;">
@@ -118,7 +118,7 @@ function buildNudgeEmail(email: string, token: string, hoursLeft: number, proper
   <!-- Footer -->
   <div style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:16px 32px;text-align:center;">
     <p style="margin:0;color:#94a3b8;font-size:12px;">
-      Choice Properties · 707-706-3137 ·
+      Progress Residential · 707-706-3137 ·
       <a href="${getSiteUrl()}/apply/" style="color:#6b7280;text-decoration:none;">Start a new application</a>
     </p>
     <p style="margin:8px 0 0;color:#cbd5e1;font-size:11px;">
@@ -200,7 +200,7 @@ Deno.serve(async (req: Request) => {
 
       await sendEmail({
         to: draft.email as string,
-        subject: `⏰ Your Choice Properties application expires in ~${hoursLeft}h — finish now`,
+        subject: `⏰ Your Progress Residential application expires in ~${hoursLeft}h — finish now`,
         html,
       });
 

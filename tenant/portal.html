@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <script src="/js/cp-error-reporter.js?v=1791777951899"></script>
+  <script src="/js/cp-error-reporter.js?v=1791790382997"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
@@ -13,12 +13,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap">
-<link rel="stylesheet" href="/css/cp-design.css?v=1791777951899">
+<link rel="stylesheet" href="/css/cp-design.css?v=1791790382997">
 <script defer src="/config.js"></script>
-<script defer src="/js/supabase.min.js?v=1791777951899"></script>
-<script defer src="/js/cp-ui.js?v=1791777951899"></script>
-<script defer src="/js/cp-chrome.js?v=1791777951899"></script>
-<script defer src="/js/cp-shell.js?v=1791777951899"></script>
+<script defer src="/js/supabase.min.js?v=1791790382997"></script>
+<script defer src="/js/cp-ui.js?v=1791790382997"></script>
+<script defer src="/js/cp-chrome.js?v=1791790382997"></script>
+<script defer src="/js/cp-shell.js?v=1791790382997"></script>
 <style>
 /* ═══════════════════════════════════════════════════════════════════════════
    PORTAL — premium design pass
@@ -53,9 +53,9 @@
   --acc-danger-bg: var(--danger-bg, #fef2f2);
   --acc-danger-border: rgba(239,68,68,.35);
   --acc-danger-text: var(--danger-strong, #b91c1c);
-  --acc-info-bg: rgba(59,130,246,.10);
-  --acc-info-border: rgba(59,130,246,.32);
-  --acc-info-text: #1d4ed8;
+  --acc-info-bg: rgba(22,130,129,.10);
+  --acc-info-border: rgba(22,130,129,.32);
+  --acc-info-text: #085d67;
   --acc-purple-bg: rgba(168,85,247,.12);
   --acc-purple-border: rgba(168,85,247,.32);
   --acc-purple-text: #7e22ce;
@@ -94,7 +94,7 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
 .spin{
   display:inline-block;width:38px;height:38px;
   border:3px solid var(--hairline);
-  border-top-color:var(--brand,#3b82f6);
+  border-top-color:var(--brand,#168281);
   border-radius:50%;animation:spin .7s linear infinite;margin-bottom:var(--sp-4);
 }
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -299,7 +299,7 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
   box-shadow:var(--elev-cta);color:#fff;
 }
 .btn-sign{background:linear-gradient(135deg,#16a34a 0%,#22c55e 100%)}
-.btn-download{background:linear-gradient(135deg,#1e40af 0%,#3b82f6 100%)}
+.btn-download{background:linear-gradient(135deg,#004751 0%,#168281 100%)}
 .btn-sign:hover,.btn-download:hover,.hero-cta:hover{transform:translateY(-1px);filter:brightness(1.05)}
 .btn-sign:active,.btn-download:active,.hero-cta:active{transform:translateY(0)}
 .lease-section{margin-top:var(--sp-5)}
@@ -356,14 +356,14 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
 .hero::before{
   content:"";position:absolute;inset:0;pointer-events:none;
   background:
-    radial-gradient(ellipse 80% 60% at 0% 0%, color-mix(in srgb,var(--hero-from,#3b82f6) 14%,transparent) 0%, transparent 60%),
-    radial-gradient(ellipse 70% 50% at 100% 0%, color-mix(in srgb,var(--hero-to,#8b5cf6) 11%,transparent) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 60% at 0% 0%, color-mix(in srgb,var(--hero-from,#168281) 14%,transparent) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 50% at 100% 0%, color-mix(in srgb,var(--hero-to,#004751) 11%,transparent) 0%, transparent 60%);
   opacity:.9;
 }
 /* Top accent line */
 .hero::after{
   content:"";position:absolute;left:0;right:0;top:0;height:3px;
-  background:linear-gradient(90deg,var(--hero-from,#3b82f6),var(--hero-to,#8b5cf6));
+  background:linear-gradient(90deg,var(--hero-from,#168281),var(--hero-to,#004751));
   opacity:.85;
 }
 .hero > *{position:relative;z-index:1}
@@ -371,7 +371,7 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
 .hero[data-tone="success"]{--hero-from:#22c55e;--hero-to:#10b981}
 .hero[data-tone="warn"]   {--hero-from:#f59e0b;--hero-to:#f97316}
 .hero[data-tone="danger"] {--hero-from:#ef4444;--hero-to:#dc2626}
-.hero[data-tone="info"]   {--hero-from:#3b82f6;--hero-to:#6366f1}
+.hero[data-tone="info"]   {--hero-from:#168281;--hero-to:#004751}
 .hero[data-tone="purple"] {--hero-from:#a855f7;--hero-to:#7c3aed}
 
 .hero-eyebrow{
@@ -383,8 +383,8 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
 }
 .hero-eyebrow::before{
   content:"";width:6px;height:6px;border-radius:50%;
-  background:var(--hero-from,#3b82f6);
-  box-shadow:0 0 0 3px color-mix(in srgb,var(--hero-from,#3b82f6) 25%,transparent);
+  background:var(--hero-from,#168281);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--hero-from,#168281) 25%,transparent);
 }
 .hero-title{
   font-family:var(--font-sans);font-weight:700;
@@ -396,7 +396,7 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
   margin-bottom:var(--sp-5);max-width:48ch;
 }
 .hero-cta{
-  background:linear-gradient(135deg,var(--hero-from,#3b82f6) 0%,var(--hero-to,#6366f1) 100%);
+  background:linear-gradient(135deg,var(--hero-from,#168281) 0%,var(--hero-to,#004751) 100%);
 }
 .hero-cta-ghost{
   display:inline-flex;align-items:center;gap:var(--sp-2);
@@ -422,7 +422,7 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
 }
 .progress-fill{
   height:100%;border-radius:var(--r-pill);
-  background:linear-gradient(90deg,var(--hero-from,#3b82f6),var(--hero-to,#6366f1));
+  background:linear-gradient(90deg,var(--hero-from,#168281),var(--hero-to,#004751));
   transition:width .8s cubic-bezier(.16,1,.3,1);
   position:relative;overflow:hidden;
 }
@@ -505,19 +505,19 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
   width:52px;height:52px;border-radius:var(--r-md);
   display:inline-flex;align-items:center;justify-content:center;
   background:linear-gradient(135deg,
-    color-mix(in srgb, var(--hero-from,#3b82f6) 18%, var(--surface)),
+    color-mix(in srgb, var(--hero-from,#168281) 18%, var(--surface)),
     color-mix(in srgb, var(--hero-to,#6366f1)   12%, var(--surface)));
-  border:1px solid color-mix(in srgb, var(--hero-from,#3b82f6) 28%, transparent);
+  border:1px solid color-mix(in srgb, var(--hero-from,#168281) 28%, transparent);
   margin-bottom:var(--sp-4);position:relative;
   box-shadow:var(--elev-1);
 }
 .hero-icon .ico{
   width:24px;height:24px;stroke-width:2.25;
-  color:var(--hero-from,#3b82f6);
+  color:var(--hero-from,#168281);
 }
 .hero-icon::after{
   content:"";position:absolute;inset:-6px;border-radius:calc(var(--r-md) + 4px);
-  border:1px solid color-mix(in srgb, var(--hero-from,#3b82f6) 18%, transparent);
+  border:1px solid color-mix(in srgb, var(--hero-from,#168281) 18%, transparent);
   pointer-events:none;
 }
 
@@ -706,7 +706,7 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
 .prop-hero-stats .ico{width:.95em;height:.95em;opacity:.85}
 .prop-hero-skel{
   height:240px;background:linear-gradient(135deg,
-    color-mix(in srgb,var(--brand,#3b82f6) 12%,var(--surface-2)),
+    color-mix(in srgb,var(--brand,#168281) 12%,var(--surface-2)),
     color-mix(in srgb,#a855f7 10%,var(--surface-2)));
   position:relative;overflow:hidden;
 }
@@ -1024,7 +1024,7 @@ body[data-portal="tenant"] .mono{font-family:var(--font-mono)}
 </div>
 <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="false"></div>
 
-<script defer src="/js/tenant/portal.js?v=1791777951899_payment_receipts"></script>
+<script defer src="/js/tenant/portal.js?v=1791790382997_payment_receipts"></script>
 
 <footer class="portal-footer">
   <a href="/terms.html" target="_blank" rel="noopener">Terms of Service</a>

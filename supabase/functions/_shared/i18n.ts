@@ -44,7 +44,7 @@ const STRINGS: Record<Locale, Dict> = {
     'common.cta_or_visit':         'Or visit:',
 
     // Footer
-    'footer.address_line1':        '2265 Livernois, Suite 500 · Troy, MI 48083',
+    'footer.address_line1':        '1801 Royal Ln., Suite 307 · Dallas, TX 75229',
     'footer.address_line2':        '707-706-3137 (Text Only)',
     'footer.tagline':              'Your trust is our standard.',
     'footer.policies':             'Policy Framework',
@@ -164,7 +164,7 @@ const STRINGS: Record<Locale, Dict> = {
     'common.cta_or_visit':         'O visite:',
 
     // Footer
-    'footer.address_line1':        '2265 Livernois, Suite 500 · Troy, MI 48083',
+    'footer.address_line1':        '1801 Royal Ln., Suite 307 · Dallas, TX 75229',
     'footer.address_line2':        '707-706-3137 (Solo Texto)',
     'footer.tagline':              'Su confianza es nuestro estándar.',
     'footer.policies':             'Marco de Políticas',

@@ -182,7 +182,7 @@ Deno.serve(async (req: Request) => {
 
   // ── Generate renewal PDF ──────────────────────────────────────────────────
   const tenantName = `${app.first_name || ''} ${app.last_name || ''}`.trim() || 'Tenant';
-  const landlordName = lease.lease_landlord_name || app.lease_landlord_name || 'Choice Properties';
+  const landlordName = lease.lease_landlord_name || app.lease_landlord_name || 'Progress Residential';
 
   const largeIncreaseSection = isLargeIncrease ? [{
     heading: 'Notice of Substantial Rent Increase',

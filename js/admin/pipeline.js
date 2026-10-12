@@ -2198,7 +2198,7 @@ function wirePanelPhotoActions(){
       <div style="background:var(--surface,#131b2e);border:1px solid var(--border,rgba(255,255,255,.1));border-radius:16px;max-width:440px;width:100%;padding:24px;box-shadow:0 20px 40px rgba(0,0,0,.5);color:var(--text,#fff)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
           <h3 style="margin:0;font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:8px">
-            <i class="fas fa-keyboard" style="color:var(--brand,#006aff)"></i> Keyboard Shortcuts
+            <i class="fas fa-keyboard" style="color:var(--brand,#085d67)"></i> Keyboard Shortcuts
           </h3>
           <button style="background:none;border:none;color:var(--muted-2,#94a3b8);font-size:1.2rem;cursor:pointer;padding:4px" onclick="document.getElementById('pl-shortcuts-modal').remove()">✕</button>
         </div>

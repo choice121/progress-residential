@@ -120,8 +120,8 @@ Deno.serve(async (req: Request) => {
     security_deposit:       lease_data.security_deposit       ?? app.security_deposit,
     move_in_costs:          lease_data.move_in_costs          ?? app.move_in_costs,
     lease_notes:            lease_data.lease_notes            ?? app.lease_notes,
-    lease_landlord_name:    lease_data.lease_landlord_name    ?? app.lease_landlord_name    ?? 'Choice Properties',
-    lease_landlord_address: lease_data.lease_landlord_address ?? app.lease_landlord_address ?? '2265 Livernois Suite 500, Troy MI 48083',
+    lease_landlord_name:    lease_data.lease_landlord_name    ?? app.lease_landlord_name    ?? 'Progress Residential',
+    lease_landlord_address: lease_data.lease_landlord_address ?? app.lease_landlord_address ?? '1801 Royal Ln., Suite 307, Dallas, TX 75229',
     lease_late_fee_flat:    lease_data.lease_late_fee_flat    ?? app.lease_late_fee_flat,
     lease_late_fee_daily:   lease_data.lease_late_fee_daily   ?? app.lease_late_fee_daily,
     lease_state_code:       leaseStateCode,
@@ -367,7 +367,7 @@ Deno.serve(async (req: Request) => {
     try {
       const sigResult = await sendEmail({
         to:      updatedApp.email,
-        subject: `\u{1F4DC} Your Lease is Ready to Sign - Choice Properties (Ref: ${app_id})`,
+        subject: `\u{1F4DC} Your Lease is Ready to Sign - Progress Residential (Ref: ${app_id})`,
         html:    signingEmailHtml(updatedApp.first_name || 'Applicant', updatedApp.property_address || '', signingUrl, app_id),
       });
       await logEmail(app_id, 'lease_signing_invite', updatedApp.email, sigResult.ok ? 'sent' : 'failed', sigResult.provider, sigResult.ok ? null : (sigResult.error || 'failed'));

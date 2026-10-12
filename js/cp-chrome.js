@@ -76,7 +76,7 @@
   //     otherwise the page will exist but have no link to reach it.
   const PORTAL = {
     admin: {
-      brand: { logo: 'CP', name: 'Progress Residential', sub: 'Admin' },
+      brand: { logo: 'PR', name: 'Progress Residential', sub: 'Admin' },
       nav: [
         { sect: 'Overview',       items: [
           { href: 'dashboard.html',       icon: 'i-home',     label: 'Dashboard' }
@@ -128,7 +128,7 @@
     },
 
     landlord: {
-      brand: { logo: 'CP', name: 'Progress Residential', sub: 'Landlord' },
+      brand: { logo: 'PR', name: 'Progress Residential', sub: 'Landlord' },
       nav: [
         { sect: 'Overview',   items: [
           { href: 'dashboard.html',    icon: 'i-home',    label: 'Dashboard' }
@@ -162,7 +162,7 @@
     },
 
     tenant: {
-      brand: { logo: 'CP', name: 'Progress Residential', sub: 'Tenant' },
+      brand: { logo: 'PR', name: 'Progress Residential', sub: 'Tenant' },
       nav: [
         { sect: 'Portal', items: [
           { href: 'portal.html',  icon: 'i-home', label: 'Home' },

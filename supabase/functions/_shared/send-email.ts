@@ -139,7 +139,7 @@ export async function sendEmail(payload: EmailPayload): Promise<EmailResult> {
 
   const template = payload.template || 'raw_html';
   const data = template === 'raw_html'
-    ? { ...(payload.data ?? {}), subject: payload.subject || 'Choice Properties', html: payload.html || '' }
+    ? { ...(payload.data ?? {}), subject: payload.subject || 'Progress Residential', html: payload.html || '' }
     : (payload.data ?? {});
   const res = await gasSend({ template, to: payload.to, cc: payload.cc ?? null, data });
   if (res.ok) return { ok: true, provider: 'gas' };

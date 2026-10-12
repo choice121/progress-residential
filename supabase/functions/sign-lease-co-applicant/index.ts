@@ -182,7 +182,7 @@ Deno.serve(async (req: Request) => {
     try {
       const coResult = await sendEmail({
         to:      co.email,
-        subject: `\u{2705} Co-Applicant Signature Received -- Choice Properties (Ref: ${appSigned.app_id})`,
+        subject: `\u{2705} Co-Applicant Signature Received -- Progress Residential (Ref: ${appSigned.app_id})`,
         html:    coApplicantSignedHtml(co.first_name || 'Co-Applicant', appSigned.property_address || '', appSigned.app_id),
       });
       await logEmail(appSigned.app_id, 'co_applicant_signed_confirm', co.email, coResult.ok ? 'sent' : 'failed', coResult.provider, coResult.ok ? null : (coResult.error || 'failed'));

@@ -21,7 +21,7 @@
 .btn-pay{background:rgba(34,197,94,.12);color:var(--success);border-color:rgba(34,197,94,.25)}
 .btn-unpay{background:rgba(245,158,11,.12);color:var(--warning);border-color:rgba(245,158,11,.25)}
 .btn-refund,.btn-act.btn-danger{background:rgba(239,68,68,.12);color:var(--danger);border-color:rgba(239,68,68,.25)}
-.btn-email{background:rgba(59,130,246,.12);color:var(--brand);border-color:rgba(59,130,246,.25)}
+.btn-email{background:rgba(22,130,129,.12);color:var(--brand);border-color:rgba(22,130,129,.25)}
 
 .detail-panel{display:none;padding:14px;background:var(--surface-2);border-top:1px solid var(--border);font-size:.82rem}
 .detail-panel.open{display:block}
@@ -57,7 +57,7 @@
 .b-unpaid   {background:rgba(245,158,11,.15);color:var(--warning)}
 .b-waived   {background:rgba(107,114,128,.15);color:#6b7280}
 .b-refunded {background:rgba(239,68,68,.15);color:var(--danger)}
-.b-lease-sent  {background:rgba(59,130,246,.15);color:var(--brand)}
+.b-lease-sent  {background:rgba(22,130,129,.15);color:var(--brand)}
 .b-lease-signed{background:rgba(34,197,94,.15);color:var(--success)}
 .b-co{background:rgba(168,85,247,.15);color:#a855f7}
 .b-pets{background:rgba(245,158,11,.15);color:var(--warning)}

@@ -76,7 +76,7 @@
     // Payment method coordination chip — shown on unpaid apps so team sees preferred method at a glance
     const prefMethod = app.primary_payment_method || '';
     const payMethodChip = (prefMethod && app.payment_status !== 'paid' && app.payment_status !== 'waived')
-      ? `<span title="Applicant's preferred payment method" style="display:inline-flex;align-items:center;gap:4px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:2px 9px;font-size:11px;font-weight:600;color:#1d4ed8;margin-left:4px;"><svg viewBox="0 0 24 24" width="11" height="11" style="stroke:currentColor;fill:none;stroke-width:2;flex-shrink:0"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>${S.esc(prefMethod)}</span>`
+      ? `<span title="Applicant's preferred payment method" style="display:inline-flex;align-items:center;gap:4px;background:#e1f5f8;border:1px solid #b0dbdd;border-radius:12px;padding:2px 9px;font-size:11px;font-weight:600;color:#085d67;margin-left:4px;"><svg viewBox="0 0 24 24" width="11" height="11" style="stroke:currentColor;fill:none;stroke-width:2;flex-shrink:0"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>${S.esc(prefMethod)}</span>`
       : '';
 
     const ds = `data-id="${S.esc(app.id)}" data-app-id="${S.esc(app.app_id||app.id)}" data-name="${S.esc(name)}" data-status="${S.esc(app.status||'')}"`;
@@ -231,14 +231,14 @@
         </div>
         ${app.pet_details ? `<div class="detail-row"><span class="detail-key">Pet details</span><span class="detail-val">${S.esc(app.pet_details)}</span></div>` : ''}
       </div>
-      <div class="detail-section" style="border-left:3px solid #3b82f6;">
-        <div class="detail-section-title" style="color:#1d4ed8;">💳 Payment Coordination</div>
+      <div class="detail-section" style="border-left:3px solid #168281;">
+        <div class="detail-section-title" style="color:#085d67;">💳 Payment Coordination</div>
         ${(app.payment_status !== 'paid' && app.payment_status !== 'waived') ? `
-        <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:0.88rem;color:#1e40af;line-height:1.5;">
+        <div style="background:#e1f5f8;border:1px solid #b0dbdd;border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:0.88rem;color:#004751;line-height:1.5;">
           <i class="fas fa-info-circle"></i> <strong>Contact this applicant using their preferred method below</strong> to arrange the ${app.application_fee ? fmtMoney(app.application_fee) : ''} fee, then record payment once confirmed.
         </div>` : ''}
         <div class="detail-grid">
-          ${app.primary_payment_method ? `<div class="detail-row"><span class="detail-key">Primary method</span><span class="detail-val" style="font-weight:700;color:#1d4ed8;">${S.esc(app.primary_payment_method)}${app.primary_payment_method_other?' ('+S.esc(app.primary_payment_method_other)+')':''}</span></div>` : ''}
+          ${app.primary_payment_method ? `<div class="detail-row"><span class="detail-key">Primary method</span><span class="detail-val" style="font-weight:700;color:#085d67;">${S.esc(app.primary_payment_method)}${app.primary_payment_method_other?' ('+S.esc(app.primary_payment_method_other)+')':''}</span></div>` : ''}
           ${app.alternative_payment_method ? `<div class="detail-row"><span class="detail-key">2nd choice</span><span class="detail-val">${S.esc(app.alternative_payment_method)}${app.alternative_payment_method_other?' ('+S.esc(app.alternative_payment_method_other)+')':''}</span></div>` : ''}
           ${app.third_choice_payment_method ? `<div class="detail-row"><span class="detail-key">3rd choice</span><span class="detail-val">${S.esc(app.third_choice_payment_method)}${app.third_choice_payment_method_other?' ('+S.esc(app.third_choice_payment_method_other)+')':''}</span></div>` : ''}
           ${(!app.primary_payment_method && !app.alternative_payment_method) ? `<div class="detail-row"><span class="detail-key muted">No preference recorded</span></div>` : ''}

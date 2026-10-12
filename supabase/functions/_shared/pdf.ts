@@ -216,7 +216,7 @@ import { PDFDocument, StandardFonts, rgb } from 'npm:pdf-lib@1.17.1';
 
     // Header
     drawText('RESIDENTIAL LEASE AGREEMENT', 15, fontBold, 4);
-    drawText('Choice Properties  -  2265 Livernois Suite 500, Troy MI 48083', 9, fontNormal, 20);
+    drawText('Progress Residential  -  1801 Royal Ln., Suite 307, Dallas, TX 75229', 9, fontNormal, 20);
 
     // Lease body - Phase 01 templating engine.
     const renderedRaw = await renderTemplate(
@@ -263,7 +263,7 @@ import { PDFDocument, StandardFonts, rgb } from 'npm:pdf-lib@1.17.1';
 
     if (mgmtSigned && mgmtSig) {
       if (y - 80 < margin) ({ page, y } = addPage());
-      drawText('Management (Choice Properties)', 9, fontBold, 4);
+      drawText('Management (Progress Residential)', 9, fontBold, 4);
       drawText('Signed by:   ' + mgmtSig, 11, fontItalic, 3);
       drawText('Date signed: ' + fmtDateTime(mgmtAt), 9, fontNormal, 3);
       if (app.management_notes) drawText('Notes:       ' + String(app.management_notes).slice(0, 200), 9, fontNormal, 3);
@@ -273,7 +273,7 @@ import { PDFDocument, StandardFonts, rgb } from 'npm:pdf-lib@1.17.1';
     if (tenantSig || coAppSig || mgmtSigned) {
       if (y - 40 < margin) ({ page, y } = addPage());
       drawWrapped(
-        'This document was electronically signed via the Choice Properties tenant portal. ' +
+        'This document was electronically signed via the Progress Residential tenant portal. ' +
         'Each typed name above constitutes a legally binding electronic signature under the ' +
         'federal E-SIGN Act (15 U.S.C. \u00a77001) and applicable state Uniform Electronic Transactions Act.',
         8, fontNormal, 3

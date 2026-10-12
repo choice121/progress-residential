@@ -163,7 +163,7 @@ Deno.serve(async (req: Request) => {
   try {
     const tenantResult = await sendEmail({
       to:      app.email,
-      subject: `\u{2705} Amendment Signed -- Choice Properties (Ref: ${app.app_id})`,
+      subject: `\u{2705} Amendment Signed -- Progress Residential (Ref: ${app.app_id})`,
       html:    amendmentSignedHtml(app.first_name || 'Applicant', app.property_address || '', amend.title, app.app_id),
     });
     await logEmail(app.app_id, 'amendment_signed_confirm', app.email, tenantResult.ok ? 'sent' : 'failed', tenantResult.provider, tenantResult.ok ? null : (tenantResult.error || 'failed'));

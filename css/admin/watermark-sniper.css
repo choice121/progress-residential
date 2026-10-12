@@ -5,16 +5,16 @@
 
 :root {
   /* Progress Residential Theme Architecture Integration */
-  --sniper-bg: var(--bg, #0a0f1e);
-  --sniper-surface: var(--surface, #111827);
-  --sniper-surface-2: var(--surface-2, #1e293b);
-  --sniper-surface-3: var(--surface-3, #26334d);
+  --sniper-bg: var(--bg, #151516);
+  --sniper-surface: var(--surface, #201f21);
+  --sniper-surface-2: var(--surface-2, #2a292b);
+  --sniper-surface-3: var(--surface-3, #3a383c);
   --sniper-border: var(--border, rgba(255, 255, 255, 0.08));
   --sniper-border-bright: var(--border-strong, rgba(255, 255, 255, 0.16));
-  --sniper-text: var(--text, #f8fafc);
-  --sniper-text-muted: var(--muted, #94a3b8);
-  --sniper-primary: var(--primary, #006aff);
-  --sniper-primary-hover: var(--primary-hover, #0056d6);
+  --sniper-text: var(--text, #f2f2f2);
+  --sniper-text-muted: var(--muted, #c3c3c4);
+  --sniper-primary: var(--primary, #085d67);
+  --sniper-primary-hover: var(--primary-hover, #004751);
   --sniper-danger: var(--danger, #ef4444);
   --sniper-danger-hover: var(--danger-hover, #dc2626);
   --sniper-danger-bg: rgba(239, 68, 68, 0.14);
@@ -34,21 +34,21 @@
   --sniper-modal-bg: var(--surface, #111827);
   --sniper-modal-backdrop: rgba(0, 0, 0, 0.75);
   --sniper-scroll-thumb: rgba(255, 255, 255, 0.16);
-  --sniper-zero-bg: #151c2e;
-  --sniper-zero-radial: radial-gradient(circle at center, rgba(239, 68, 68, 0.08) 0%, rgba(17, 24, 39, 0.95) 80%);
+  --sniper-zero-bg: #201f21;
+  --sniper-zero-radial: radial-gradient(circle at center, rgba(239, 68, 68, 0.08) 0%, rgba(32, 31, 33, 0.95) 80%);
   --sniper-zero-title: #fca5a5;
-  --sniper-error-bg: #161b2a;
+  --sniper-error-bg: #201f21;
 }
 
 [data-theme="light"] {
-  --sniper-bg: #f8fafc;
+  --sniper-bg: #fcfcfc;
   --sniper-surface: #ffffff;
-  --sniper-surface-2: #f1f5f9;
-  --sniper-surface-3: #e2e8f0;
+  --sniper-surface-2: #f5f9f9;
+  --sniper-surface-3: #e7eff0;
   --sniper-border: rgba(15, 23, 42, 0.08);
   --sniper-border-bright: rgba(15, 23, 42, 0.18);
-  --sniper-text: #0f172a;
-  --sniper-text-muted: #64748b;
+  --sniper-text: #201f21;
+  --sniper-text-muted: #686868;
   --sniper-card-bg: #ffffff;
   --sniper-card-overlay-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(15, 23, 42, 0.90) 100%);
   --sniper-card-hover-shadow: 0 8px 24px rgba(15, 23, 42, 0.10);

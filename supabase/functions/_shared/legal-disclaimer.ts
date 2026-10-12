@@ -20,7 +20,7 @@ export const DISCLAIMER_VERSION = '2026-04-v1';
 
 export const STANDARD_DISCLAIMER =
   'This document is statute-derived and has not been individually ' +
-  'attorney-reviewed for every jurisdiction. Choice Properties is not ' +
+  'attorney-reviewed for every jurisdiction. Progress Residential is not ' +
   'a law firm and does not provide legal advice. Tenants and landlords ' +
   'are encouraged to consult a licensed attorney in their state before signing.';
 

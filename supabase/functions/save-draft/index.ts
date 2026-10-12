@@ -111,18 +111,18 @@ Deno.serve(async (req: Request) => {
           <h2 style="color:#1a5276;">Your application progress is saved</h2>
           <p>Click the link below to continue your rental application right where you left off — on any device or browser.</p>
           <p style="margin:24px 0;">
-            <a href="${resumeUrl}" style="background:#2563eb;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;">
+            <a href="${resumeUrl}" style="background:#004751;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;">
               Continue My Application →
             </a>
           </p>
           <p style="color:#64748b;font-size:13px;">This link is valid for 7 days. If it expires, you can start a new application at any time.</p>
           <hr style="border:none;border-top:1px solid #e2e8f0;margin:24px 0;" />
-          <p style="color:#94a3b8;font-size:12px;">Choice Properties · 707-706-3137</p>
+          <p style="color:#94a3b8;font-size:12px;">Progress Residential · 707-706-3137</p>
         </div>`;
 
       sendEmail({
         to: email,
-        subject: 'Your Choice Properties application progress is saved',
+        subject: 'Your Progress Residential application progress is saved',
         html,
       }).catch(err => console.error('Draft email error:', err));
     }

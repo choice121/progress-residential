@@ -1,5 +1,5 @@
 // ============================================================
-// CHOICE PROPERTIES — GAS EMAIL RELAY — Bilingual EN/ES
+// PROGRESS RESIDENTIAL — GAS EMAIL RELAY — Bilingual EN/ES
 // =============================================================
 //
 // CANONICAL UX COPY (mirror of js/cp-copy.js + supabase/functions/_shared/copy.ts)
@@ -67,7 +67,7 @@ function getConfig() {
   return {
     secret:       props.getProperty('RELAY_SECRET')   || '',
     adminEmails:  (props.getProperty('ADMIN_EMAILS')  || 'your@email.com').split(',').map(function(e){ return e.trim(); }),
-    companyName:  props.getProperty('COMPANY_NAME')   || 'Choice Properties',
+    companyName:  props.getProperty('COMPANY_NAME')   || 'Progress Residential',
     companyEmail: props.getProperty('COMPANY_EMAIL')  || 'support@choiceproperties.com',
     companyPhone: props.getProperty('COMPANY_PHONE')  || 'YOUR-PHONE-NUMBER',
     dashboardUrl: props.getProperty('DASHBOARD_URL')  || 'https://your-domain.com',
@@ -80,16 +80,16 @@ function getConfig() {
 var EMAIL_STRINGS = {
   en: {
     dear: 'Dear', hello: 'Hello', questions: 'Questions?', textUs: 'Text:',
-    closingTeam: 'Choice Properties Leasing Team',
-    closingSystem: 'Choice Properties System',
+    closingTeam: 'Progress Residential Leasing Team',
+    closingSystem: 'Progress Residential System',
     headerSub: 'Professional Property Management',
     tagline: 'Your trust is our standard.',
     confidential: 'This message is intended solely for the named recipient and contains confidential information. If you received this in error, please disregard and delete it. Equal Housing Opportunity.',
-    appConfirmSubject: '[Choice Properties] Official Application Confirmation \u2014 Ref: ',
+    appConfirmSubject: '[Progress Residential] Official Application Confirmation \u2014 Ref: ',
     appConfirmTitle: 'Application Successfully Received',
     appConfirmStatusPending: '\u23f3  Awaiting Application Fee \u00b7 Review Pending',
     appConfirmStatusFree: '\u2713  Application Received \u2014 No Fee Required \u00b7 Review Pending',
-    appConfirmIntro: 'Thank you for choosing Choice Properties. We have officially received your rental application and your file has been securely recorded in our system. This email constitutes your formal acknowledgment of receipt. Please retain it for your records.',
+    appConfirmIntro: 'Thank you for choosing Progress Residential. We have officially received your rental application and your file has been securely recorded in our system. This email constitutes your formal acknowledgment of receipt. Please retain it for your records.',
     appSummaryLabel: 'Application Summary', appIdLabel: 'Application ID',
     applicantNameLabel: 'Applicant Name', propertyInterestLabel: 'Property of Interest',
     toBeConfirmed: 'To be confirmed', requestedMoveInLabel: 'Requested Move-In',
@@ -121,7 +121,7 @@ var EMAIL_STRINGS = {
     saveAppIdBody: 'Your application ID is', saveAppIdBody2: 'Save this reference number to track your application status at any time.',
     trackBtn: 'Track My Application', orVisit: 'Or visit:',
     closingNote: 'Should you have any questions prior to hearing from our team, please do not hesitate to reach out.',
-    payConfirmSubject: '[Choice Properties] Application Fee Confirmed \u2014 ',
+    payConfirmSubject: '[Progress Residential] Application Fee Confirmed \u2014 ',
     payConfirmTitle: 'Application Fee Confirmed',
     payConfirmStatus: '\u2713  Payment Received \u2014 Application Now Under Review',
     payConfirmIntro: 'We are pleased to confirm that your application processing fee has been received and officially recorded. Your application is now active and has been placed in our formal review queue.',
@@ -131,12 +131,12 @@ var EMAIL_STRINGS = {
     payNext1Title: 'Active Review', payNext1Body: 'Your application is now in active review. Decisions are typically made within 24 to 72 hours, and applicants who respond promptly to any follow-up are often prioritized.',
     payNext2Title: 'Background & Income Verification', payNext2Body: 'We will conduct standard verification procedures as part of our review.',
     payNext3Title: 'Decision Notification', payNext3Body: 'You will receive an email once a decision has been made.',
-    approvedSubject: '[Choice Properties] Application Approved \u2014 ',
-    statusSubject: '[Choice Properties] Application Status Update \u2014 ',
+    approvedSubject: '[Progress Residential] Application Approved \u2014 ',
+    statusSubject: '[Progress Residential] Application Status Update \u2014 ',
     approvedTitle: 'Application Approved', statusTitle: 'Application Update',
     approvedStatus: '\u2713  Congratulations \u2014 Your Application Has Been Approved',
     deniedStatus: '\u2014  Your Application Has Been Reviewed',
-    approvedIntro: 'We are delighted to inform you that your rental application with Choice Properties has been <strong>approved</strong>. Our leasing team will be in contact shortly to prepare and deliver your lease agreement for electronic signature.',
+    approvedIntro: 'We are delighted to inform you that your rental application with Progress Residential has been <strong>approved</strong>. Our leasing team will be in contact shortly to prepare and deliver your lease agreement for electronic signature.',
     approvedCalloutTitle: '\u2713 Application Approved',
     approvedCalloutBody: 'You have been selected based on your application. This selection is time-sensitive \u2014 units are offered on a first-completion basis among approved applicants. Please complete the next steps promptly to secure your unit.',
     approvedNextLabel: 'Your Next Steps',
@@ -150,10 +150,10 @@ var EMAIL_STRINGS = {
     deniedCalloutBodyPost: 'We understand this is disappointing and we genuinely appreciate the trust you placed in us.',
     deniedCalloutBodyNone: 'We understand this is disappointing and we genuinely appreciate the trust you placed in us.',
     lookingAheadLabel: 'Looking Ahead',
-    deniedNext1Title: 'Reapplication Protection Policy', deniedNext1Body: 'As a Choice Properties applicant, you may apply for any other available listing within <strong>30 days</strong> at no additional fee.',
+    deniedNext1Title: 'Reapplication Protection Policy', deniedNext1Body: 'As a Progress Residential applicant, you may apply for any other available listing within <strong>30 days</strong> at no additional fee.',
     deniedNext2Title: 'Other Properties', deniedNext2Body: 'Our team manages a portfolio of properties nationwide and would be happy to discuss alternatives.',
     viewAppBtn: 'View My Application',
-    leaseSentSubject: '[Choice Properties] Action Required \u2014 Lease Agreement Ready for Signature (',
+    leaseSentSubject: '[Progress Residential] Action Required \u2014 Lease Agreement Ready for Signature (',
     leaseSentTitle: 'Your Lease Agreement is Ready',
     leaseSentStatus: '\ud83d\udccb  Action Required \u2014 Please Review and Sign Within 48 Hours',
     leaseSentIntro: 'Your Residential Lease Agreement has been formally prepared and is now ready for your review and electronic signature. Please read the agreement in its entirety before signing. Your electronic signature constitutes a legally binding commitment under applicable state and federal law.',
@@ -164,10 +164,10 @@ var EMAIL_STRINGS = {
     urgentTitle: '\u23f0 48-Hour Signing Window',
     urgentBody: 'To secure your unit, your lease must be signed within <strong>48 hours</strong>. If you require additional time, please contact our team immediately.',
     signLeaseBtn: 'Review & Sign My Lease', orCopyLink: 'Or copy this link:',
-    leaseSignedSubject: '[Choice Properties] Lease Executed \u2014 Welcome, Tenant Confirmation (',
-    leaseSignedTitle: 'Welcome to Choice Properties',
+    leaseSignedSubject: '[Progress Residential] Lease Executed \u2014 Welcome, Tenant Confirmation (',
+    leaseSignedTitle: 'Welcome to Progress Residential',
     leaseSignedStatus: '\u2713  Lease Successfully Executed \u2014 Your Tenancy is Confirmed',
-    leaseSignedIntro: 'Congratulations and welcome to Choice Properties. Your Residential Lease Agreement has been successfully executed and is now legally in effect. This communication serves as your official confirmation of tenancy.',
+    leaseSignedIntro: 'Congratulations and welcome to Progress Residential. Your Residential Lease Agreement has been successfully executed and is now legally in effect. This communication serves as your official confirmation of tenancy.',
     tenancyConfirmLabel: 'Your Tenancy Confirmation', tenancyConfirmTitle: '\u2713 Lease Executed \u2014 Tenancy Confirmed',
     moveInDateLabel: 'Move-In Date', leaseEndDateLabel: 'Lease End Date', monthlyRentLabel2: 'Monthly Rent',
     moveInTotalLabel: 'Move-In Total Due', appRefLabel: 'Application Reference',
@@ -176,8 +176,8 @@ var EMAIL_STRINGS = {
     leaseNext2Title: 'Key Handoff', leaseNext2Body: 'Once all payments are confirmed, your key handoff will be coordinated.',
     leaseNext3Title: 'Your Dashboard', leaseNext3Body: 'View your lease details at any time through your applicant dashboard.',
     viewDashBtn: 'View My Dashboard', downloadLeaseBtn: '\ud83d\udcc4 Download Lease PDF',
-    leaseWelcomeNote: 'We are truly delighted to welcome you to Choice Properties.',
-    leaseCoSubject: '[Choice Properties] Action Required \u2014 Co-Applicant Lease Signature (',
+    leaseWelcomeNote: 'We are truly delighted to welcome you to Progress Residential.',
+    leaseCoSubject: '[Progress Residential] Action Required \u2014 Co-Applicant Lease Signature (',
     leaseCoTitle: 'Co-Applicant Lease Agreement Ready',
     leaseCoStatus: '\ud83d\udccb  Co-Applicant Action Required \u2014 Please Review and Sign',
     leaseCoIntro1: 'You have been listed as a co-applicant on a rental application submitted by',
@@ -186,7 +186,7 @@ var EMAIL_STRINGS = {
     leaseCoImportantTitle: '\u26a0\ufe0f Important \u2014 Use Only This Link',
     leaseCoImportantBody: 'Your co-applicant signing link is <strong>unique to you</strong>. Do not share it. The primary applicant has a separate link. You must use the button below to sign.',
     signCoBtn: 'Review & Sign as Co-Applicant',
-    moveInSubject: '[Choice Properties] Welcome Home! Move-in Confirmed \u2014 ',
+    moveInSubject: '[Progress Residential] Welcome Home! Move-in Confirmed \u2014 ',
     moveInHeadline: 'Welcome Home,', moveInSubheadline: 'Your move-in has been officially confirmed',
     moveInCongrats: 'Congratulations on your new home!',
     moveInIntro: 'Your move-in for', moveInIntro2: 'has been confirmed by our leasing team.',
@@ -194,17 +194,17 @@ var EMAIL_STRINGS = {
     moveInAppIdLabel: 'Application ID', moveInNotesLabel: 'Notes',
     moveInDueNote: "Your rent is due on the <strong>1st of each month</strong>. If you have any questions, don't hesitate to reach out to our team.",
     moveInDashBtn: 'View My Tenant Dashboard',
-    adminMsgSubject: '[Choice Properties] Message from Your Leasing Team \u2014 ',
+    adminMsgSubject: '[Progress Residential] Message from Your Leasing Team \u2014 ',
     adminMsgTitle: 'Message from Your Leasing Team',
     adminMsgIntro: 'Your leasing team has sent you a message regarding your application',
     adminMsgLabel: 'Message', replyBtn: 'Reply on My Dashboard',
-    inquiryReplySubject: '[Choice Properties] We Received Your Inquiry \u2014 ',
+    inquiryReplySubject: '[Progress Residential] We Received Your Inquiry \u2014 ',
     inquiryReplyTitle: 'Inquiry Received',
     inquiryReplyIntro1: 'Thank you for your inquiry regarding',
     inquiryReplyIntro2: 'We have received your message and a member of our leasing team will be in touch with you shortly to provide more information and schedule a showing if applicable.',
     inquiryDetailsTitle: 'Your Inquiry Details',
     inquiryClosingNote: 'We look forward to speaking with you.',
-    appIdRecoverySubject: '[Choice Properties] Your Application ID \u2014 ',
+    appIdRecoverySubject: '[Progress Residential] Your Application ID \u2014 ',
     appIdRecoveryTitle: 'Application ID Recovery',
     appIdRecoveryIntro: 'You requested your Application ID. Here it is:',
     appIdRecoveryIgnore: 'If you did not request this, you can safely ignore this email.',
@@ -212,16 +212,16 @@ var EMAIL_STRINGS = {
   },
   es: {
     dear: 'Estimado/a', hello: 'Hola', questions: '\u00bfPreguntas?', textUs: 'Texto:',
-    closingTeam: 'Equipo de Arrendamiento de Choice Properties',
-    closingSystem: 'Sistema de Choice Properties',
+    closingTeam: 'Equipo de Arrendamiento de Progress Residential',
+    closingSystem: 'Sistema de Progress Residential',
     headerSub: 'Administraci\u00f3n Profesional de Propiedades',
     tagline: 'Su confianza es nuestro est\u00e1ndar.',
     confidential: 'Este mensaje est\u00e1 destinado exclusivamente al destinatario indicado y contiene informaci\u00f3n confidencial. Si lo recibi\u00f3 por error, por favor ign\u00f3relo y el\u00edminelo. Igualdad de Oportunidades en Vivienda.',
-    appConfirmSubject: '[Choice Properties] Confirmaci\u00f3n Oficial de Solicitud \u2014 Ref: ',
+    appConfirmSubject: '[Progress Residential] Confirmaci\u00f3n Oficial de Solicitud \u2014 Ref: ',
     appConfirmTitle: 'Solicitud Recibida Exitosamente',
     appConfirmStatusPending: '\u23f3  En Espera del Pago \u00b7 Revisi\u00f3n Pendiente',
     appConfirmStatusFree: '\u2713  Solicitud Recibida \u2014 Sin Cargo Requerido \u00b7 Revisi\u00f3n Pendiente',
-    appConfirmIntro: 'Gracias por elegir Choice Properties. Hemos recibido oficialmente su solicitud de arrendamiento y su expediente ha sido registrado de forma segura en nuestro sistema. Este correo constituye su acuse de recibo formal. Por favor cons\u00e9rvelo para sus registros.',
+    appConfirmIntro: 'Gracias por elegir Progress Residential. Hemos recibido oficialmente su solicitud de arrendamiento y su expediente ha sido registrado de forma segura en nuestro sistema. Este correo constituye su acuse de recibo formal. Por favor cons\u00e9rvelo para sus registros.',
     appSummaryLabel: 'Resumen de Solicitud', appIdLabel: 'ID de Solicitud',
     applicantNameLabel: 'Nombre del Solicitante', propertyInterestLabel: 'Propiedad de Inter\u00e9s',
     toBeConfirmed: 'Por confirmar', requestedMoveInLabel: 'Fecha de Entrada Solicitada',
@@ -253,7 +253,7 @@ var EMAIL_STRINGS = {
     saveAppIdBody: 'Su ID de solicitud es', saveAppIdBody2: 'Guarde este n\u00famero de referencia para rastrear el estado de su solicitud en cualquier momento.',
     trackBtn: 'Rastrear Mi Solicitud', orVisit: 'O visite:',
     closingNote: 'Si tiene alguna pregunta antes de recibir noticias de nuestro equipo, no dude en comunicarse con nosotros.',
-    payConfirmSubject: '[Choice Properties] Pago de Solicitud Confirmado \u2014 ',
+    payConfirmSubject: '[Progress Residential] Pago de Solicitud Confirmado \u2014 ',
     payConfirmTitle: 'Pago de Solicitud Confirmado',
     payConfirmStatus: '\u2713  Pago Recibido \u2014 Solicitud Ahora en Revisi\u00f3n',
     payConfirmIntro: 'Nos complace confirmar que su cargo de procesamiento de solicitud ha sido recibido y registrado oficialmente. Su solicitud est\u00e1 activa y ha sido colocada en nuestra cola de revisi\u00f3n formal.',
@@ -263,12 +263,12 @@ var EMAIL_STRINGS = {
     payNext1Title: 'Revisi\u00f3n Activa', payNext1Body: 'Su solicitud est\u00e1 ahora en revisi\u00f3n activa. Las decisiones generalmente se toman dentro de 24 a 72 horas, y los solicitantes que responden con prontitud a cualquier seguimiento suelen tener prioridad.',
     payNext2Title: 'Verificaci\u00f3n de Antecedentes e Ingresos', payNext2Body: 'Realizaremos los procedimientos est\u00e1ndar de verificaci\u00f3n como parte de nuestra revisi\u00f3n.',
     payNext3Title: 'Notificaci\u00f3n de Decisi\u00f3n', payNext3Body: 'Recibir\u00e1 un correo electr\u00f3nico una vez que se haya tomado una decisi\u00f3n.',
-    approvedSubject: '[Choice Properties] Solicitud Aprobada \u2014 ',
-    statusSubject: '[Choice Properties] Actualizaci\u00f3n de Estado de Solicitud \u2014 ',
+    approvedSubject: '[Progress Residential] Solicitud Aprobada \u2014 ',
+    statusSubject: '[Progress Residential] Actualizaci\u00f3n de Estado de Solicitud \u2014 ',
     approvedTitle: 'Solicitud Aprobada', statusTitle: 'Actualizaci\u00f3n de Solicitud',
     approvedStatus: '\u2713  Felicitaciones \u2014 Su Solicitud Ha Sido Aprobada',
     deniedStatus: '\u2014  Su Solicitud Ha Sido Revisada',
-    approvedIntro: 'Nos complace informarle que su solicitud de arrendamiento con Choice Properties ha sido <strong>aprobada</strong>. Nuestro equipo se comunicar\u00e1 con usted en breve para preparar y enviarle su contrato de arrendamiento para firma electr\u00f3nica.',
+    approvedIntro: 'Nos complace informarle que su solicitud de arrendamiento con Progress Residential ha sido <strong>aprobada</strong>. Nuestro equipo se comunicar\u00e1 con usted en breve para preparar y enviarle su contrato de arrendamiento para firma electr\u00f3nica.',
     approvedCalloutTitle: '\u2713 Solicitud Aprobada',
     approvedCalloutBody: 'Ha sido seleccionado/a seg\u00fan su solicitud. Esta selecci\u00f3n es sensible al tiempo \u2014 las unidades se ofrecen por orden de finalizaci\u00f3n entre los solicitantes aprobados. Por favor complete los siguientes pasos con prontitud para asegurar su unidad.',
     approvedNextLabel: 'Sus Pr\u00f3ximos Pasos',
@@ -282,10 +282,10 @@ var EMAIL_STRINGS = {
     deniedCalloutBodyPost: 'Entendemos que esto es decepcionante y apreciamos sinceramente la confianza que deposit\u00f3 en nosotros.',
     deniedCalloutBodyNone: 'Entendemos que esto es decepcionante y apreciamos sinceramente la confianza que deposit\u00f3 en nosotros.',
     lookingAheadLabel: 'Mirando Hacia Adelante',
-    deniedNext1Title: 'Pol\u00edtica de Protecci\u00f3n de Nueva Solicitud', deniedNext1Body: 'Como solicitante de Choice Properties, puede aplicar para cualquier otro inmueble disponible dentro de <strong>30 d\u00edas</strong> sin cargo adicional.',
+    deniedNext1Title: 'Pol\u00edtica de Protecci\u00f3n de Nueva Solicitud', deniedNext1Body: 'Como solicitante de Progress Residential, puede aplicar para cualquier otro inmueble disponible dentro de <strong>30 d\u00edas</strong> sin cargo adicional.',
     deniedNext2Title: 'Otras Propiedades', deniedNext2Body: 'Nuestro equipo administra un portafolio de propiedades a nivel nacional y con gusto discutir\u00e1 alternativas.',
     viewAppBtn: 'Ver Mi Solicitud',
-    leaseSentSubject: '[Choice Properties] Acci\u00f3n Requerida \u2014 Contrato Listo para Firma (',
+    leaseSentSubject: '[Progress Residential] Acci\u00f3n Requerida \u2014 Contrato Listo para Firma (',
     leaseSentTitle: 'Su Contrato de Arrendamiento Est\u00e1 Listo',
     leaseSentStatus: '\ud83d\udccb  Acci\u00f3n Requerida \u2014 Por Favor Revise y Firme en 48 Horas',
     leaseSentIntro: 'Su Contrato de Arrendamiento Residencial ha sido formalmente preparado y est\u00e1 listo para su revisi\u00f3n y firma electr\u00f3nica. Por favor lea el contrato en su totalidad antes de firmar. Su firma electr\u00f3nica constituye un compromiso legalmente vinculante bajo las leyes estatales y federales aplicables.',
@@ -296,10 +296,10 @@ var EMAIL_STRINGS = {
     urgentTitle: '\u23f0 Plazo de 48 Horas para Firmar',
     urgentBody: 'Para asegurar su unidad, el contrato debe firmarse dentro de <strong>48 horas</strong>. Si necesita tiempo adicional, comun\u00edquese con nuestro equipo de inmediato.',
     signLeaseBtn: 'Revisar y Firmar Mi Contrato', orCopyLink: 'O copie este enlace:',
-    leaseSignedSubject: '[Choice Properties] Contrato Ejecutado \u2014 Confirmaci\u00f3n de Arrendatario (',
-    leaseSignedTitle: 'Bienvenido/a a Choice Properties',
+    leaseSignedSubject: '[Progress Residential] Contrato Ejecutado \u2014 Confirmaci\u00f3n de Arrendatario (',
+    leaseSignedTitle: 'Bienvenido/a a Progress Residential',
     leaseSignedStatus: '\u2713  Contrato Ejecutado Exitosamente \u2014 Su Arrendamiento Est\u00e1 Confirmado',
-    leaseSignedIntro: 'Felicitaciones y bienvenido/a a Choice Properties. Su Contrato de Arrendamiento Residencial ha sido ejecutado exitosamente y tiene vigencia legal. Esta comunicaci\u00f3n sirve como confirmaci\u00f3n oficial de su arrendamiento.',
+    leaseSignedIntro: 'Felicitaciones y bienvenido/a a Progress Residential. Su Contrato de Arrendamiento Residencial ha sido ejecutado exitosamente y tiene vigencia legal. Esta comunicaci\u00f3n sirve como confirmaci\u00f3n oficial de su arrendamiento.',
     tenancyConfirmLabel: 'Confirmaci\u00f3n de Su Arrendamiento', tenancyConfirmTitle: '\u2713 Contrato Ejecutado \u2014 Arrendamiento Confirmado',
     moveInDateLabel: 'Fecha de Entrada', leaseEndDateLabel: 'Fecha de T\u00e9rmino del Contrato', monthlyRentLabel2: 'Renta Mensual',
     moveInTotalLabel: 'Total a Pagar al Ingresar', appRefLabel: 'Referencia de Solicitud',
@@ -308,8 +308,8 @@ var EMAIL_STRINGS = {
     leaseNext2Title: 'Entrega de Llaves', leaseNext2Body: 'Una vez confirmados todos los pagos, se coordinar\u00e1 la entrega de llaves.',
     leaseNext3Title: 'Su Panel de Control', leaseNext3Body: 'Consulte los detalles de su contrato en cualquier momento desde su panel de solicitante.',
     viewDashBtn: 'Ver Mi Panel de Control', downloadLeaseBtn: '\ud83d\udcc4 Descargar Contrato PDF',
-    leaseWelcomeNote: 'Estamos verdaderamente encantados de darle la bienvenida a Choice Properties.',
-    leaseCoSubject: '[Choice Properties] Acci\u00f3n Requerida \u2014 Firma de Co-Solicitante (',
+    leaseWelcomeNote: 'Estamos verdaderamente encantados de darle la bienvenida a Progress Residential.',
+    leaseCoSubject: '[Progress Residential] Acci\u00f3n Requerida \u2014 Firma de Co-Solicitante (',
     leaseCoTitle: 'Contrato de Arrendamiento Listo para Co-Solicitante',
     leaseCoStatus: '\ud83d\udccb  Acci\u00f3n Requerida del Co-Solicitante \u2014 Por Favor Revise y Firme',
     leaseCoIntro1: 'Usted ha sido registrado/a como co-solicitante en una solicitud de arrendamiento presentada por',
@@ -318,7 +318,7 @@ var EMAIL_STRINGS = {
     leaseCoImportantTitle: '\u26a0\ufe0f Importante \u2014 Use \u00fanicamente Este Enlace',
     leaseCoImportantBody: 'Su enlace de firma como co-solicitante es <strong>\u00fanico para usted</strong>. No lo comparta. El solicitante principal tiene un enlace separado. Debe usar el bot\u00f3n a continuaci\u00f3n para firmar.',
     signCoBtn: 'Revisar y Firmar como Co-Solicitante',
-    moveInSubject: '[Choice Properties] \u00a1Bienvenido/a a Casa! Entrada Confirmada \u2014 ',
+    moveInSubject: '[Progress Residential] \u00a1Bienvenido/a a Casa! Entrada Confirmada \u2014 ',
     moveInHeadline: '\u00a1Bienvenido/a a Casa,', moveInSubheadline: 'Su entrada ha sido confirmada oficialmente',
     moveInCongrats: '\u00a1Felicitaciones por su nuevo hogar!',
     moveInIntro: 'Su entrada para', moveInIntro2: 'ha sido confirmada por nuestro equipo de arrendamiento.',
@@ -326,17 +326,17 @@ var EMAIL_STRINGS = {
     moveInAppIdLabel: 'ID de Solicitud', moveInNotesLabel: 'Notas',
     moveInDueNote: 'Su renta vence el <strong>d\u00eda 1 de cada mes</strong>. Si tiene alguna pregunta, no dude en comunicarse con nuestro equipo.',
     moveInDashBtn: 'Ver Mi Panel de Arrendatario',
-    adminMsgSubject: '[Choice Properties] Mensaje de Su Equipo de Arrendamiento \u2014 ',
+    adminMsgSubject: '[Progress Residential] Mensaje de Su Equipo de Arrendamiento \u2014 ',
     adminMsgTitle: 'Mensaje de Su Equipo de Arrendamiento',
     adminMsgIntro: 'Su equipo de arrendamiento le ha enviado un mensaje relacionado con su solicitud',
     adminMsgLabel: 'Mensaje', replyBtn: 'Responder en Mi Panel',
-    inquiryReplySubject: '[Choice Properties] Recibimos Su Consulta \u2014 ',
+    inquiryReplySubject: '[Progress Residential] Recibimos Su Consulta \u2014 ',
     inquiryReplyTitle: 'Consulta Recibida',
     inquiryReplyIntro1: 'Gracias por su consulta sobre',
     inquiryReplyIntro2: 'Hemos recibido su mensaje y un miembro de nuestro equipo de arrendamiento se comunicar\u00e1 con usted en breve para brindarle m\u00e1s informaci\u00f3n y programar una visita si aplica.',
     inquiryDetailsTitle: 'Detalles de Su Consulta',
     inquiryClosingNote: 'Esperamos con gusto hablar con usted.',
-    appIdRecoverySubject: '[Choice Properties] Su ID de Solicitud \u2014 ',
+    appIdRecoverySubject: '[Progress Residential] Su ID de Solicitud \u2014 ',
     appIdRecoveryTitle: 'Recuperaci\u00f3n de ID de Solicitud',
     appIdRecoveryIntro: 'Usted solicit\u00f3 su ID de Solicitud. Aqu\u00ed est\u00e1:',
     appIdRecoveryIgnore: 'Si no realiz\u00f3 esta solicitud, puede ignorar este correo con seguridad.',
@@ -545,7 +545,7 @@ function send(to, cc, subject, htmlBody, cfg) {
 }
 
 function sendRawHtml(to, cc, d, cfg) {
-  send(to, cc, d.subject || 'Choice Properties', d.html || '', cfg);
+  send(to, cc, d.subject || 'Progress Residential', d.html || '', cfg);
 }
 
 // ============================================================
@@ -624,14 +624,14 @@ function sendAdminNotification(to, cc, d, cfg) {
       '<a href="' + adminUrl + '" style="display:inline-block;background:#0a1628;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Admin Dashboard</a>' +
       '<a href="' + dashLink + '" style="display:inline-block;background:#1d4ed8;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">View Application</a>' +
       '<a href="mailto:' + d.email + '?subject=Your%20Application%20' + d.app_id + '" style="display:inline-block;background:#64748b;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Email Applicant</a>' +
-      '</div></div><div class="email-closing"><div class="sign-off">Choice Properties System</div><div class="sign-company">Automated Admin Notification \u2014 ' + d.app_id + '</div></div></div>', cfg), cfg);
+      '</div></div><div class="email-closing"><div class="sign-off">Progress Residential System</div><div class="sign-company">Automated Admin Notification \u2014 ' + d.app_id + '</div></div></div>', cfg), cfg);
 }
 
 // ── 3. Landlord Notification (English only — internal) ────
 function sendLandlordNotification(to, cc, d, cfg) {
   var dashLink = cfg.dashboardUrl + '/landlord/applications.html';
   send(to, cc,
-    '[Choice Properties] New Application for ' + (d.propertyAddress || d.property_address || 'your listing') + ' \u2014 ' + (d.applicantName || d.first_name + ' ' + d.last_name),
+    '[Progress Residential] New Application for ' + (d.propertyAddress || d.property_address || 'your listing') + ' \u2014 ' + (d.applicantName || d.first_name + ' ' + d.last_name),
     wrap('New Rental Application', d.app_id, 'en',
       '<div class="status-line status-pending">\ud83d\udccb &nbsp; Someone applied to your property</div>' +
       '<div class="email-body"><p class="greeting">Hi ' + esc(d.landlordName || 'there') + ',</p><p class="intro-text">A new rental application has been submitted for <strong>' + esc(d.propertyAddress || d.property_address || 'your property') + '</strong>. Log in to your landlord dashboard to review.</p>' +
@@ -645,7 +645,7 @@ function sendLandlordNotification(to, cc, d, cfg) {
       '</table></div>' +
       '<div class="section"><a href="' + dashLink + '" style="display:inline-block;background:#0a1628;color:white;text-decoration:none;padding:12px 24px;border-radius:3px;font-size:14px;font-weight:600;">View in Landlord Dashboard \u2192</a></div>' +
       '<div class="contact-row"><strong>Questions?</strong> &nbsp; Text: ' + cfg.companyPhone + ' &nbsp;&middot;&nbsp; ' + cfg.companyEmail + '</div>' +
-      '<div class="email-closing"><div class="sign-off">Choice Properties</div><div class="sign-company">' + cfg.companyEmail + '</div></div></div>', cfg), cfg);
+      '<div class="email-closing"><div class="sign-off">Progress Residential</div><div class="sign-company">' + cfg.companyEmail + '</div></div></div>', cfg), cfg);
 }
 
 // ── 4. Payment Confirmation (bilingual) ───────────────────
@@ -755,7 +755,7 @@ function sendLeaseSignedAdmin(to, cc, d, cfg) {
       '</div></div><div class="section"><div class="section-label">Quick Actions</div><div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px;">' +
       '<a href="' + adminUrl + '" style="display:inline-block;background:#0a1628;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Admin Dashboard</a>' +
       '<a href="mailto:' + d.email + '?subject=Next Steps \u2014 Move-In \u2014 ' + d.app_id + '" style="display:inline-block;background:#1d4ed8;color:white;text-decoration:none;padding:11px 22px;border-radius:3px;font-size:13px;font-weight:600;">Email Tenant</a>' +
-      '</div></div><div class="email-closing"><div class="sign-off">Choice Properties System</div><div class="sign-company">Automated Admin Alert \u2014 ' + d.app_id + '</div></div></div>', cfg), cfg);
+      '</div></div><div class="email-closing"><div class="sign-off">Progress Residential System</div><div class="sign-company">Automated Admin Alert \u2014 ' + d.app_id + '</div></div></div>', cfg), cfg);
 }
 
 // ── 9. Move-In Confirmation (bilingual) ───────────────────
@@ -830,7 +830,7 @@ function sendNewInquiry(to, cc, d, cfg) {
       '<tr><td style="padding:8px 0;color:#666">Phone</td><td style="padding:8px 0">' + esc(d.tenantPhone || 'Not provided') + '</td></tr>' +
       '</table></div><div class="callout"><h4>Their Message</h4><p style="white-space:pre-line">' + esc(d.message) + '</p></div>' +
       '<div class="contact-row"><strong>Questions?</strong> &nbsp; Text: ' + cfg.companyPhone + ' &nbsp;&middot;&nbsp; ' + cfg.companyEmail + '</div>' +
-      '<div class="email-closing"><div class="sign-off">Choice Properties</div><div class="sign-company">' + cfg.companyEmail + '</div></div></div>', cfg), cfg);
+      '<div class="email-closing"><div class="sign-off">Progress Residential</div><div class="sign-company">' + cfg.companyEmail + '</div></div></div>', cfg), cfg);
 }
 
 // ── 13. App ID Recovery (bilingual) ───────────────────────
@@ -915,7 +915,7 @@ function sendNewMessageLandlord(to, cc, d, cfg) {
     ? '<tr><td style="padding:8px 0;color:#666;width:140px">Email</td><td style="padding:8px 0"><a href="mailto:' + d.tenantEmail + '" style="color:#1a5276">' + esc(d.tenantEmail) + '</a></td></tr>'
     : '';
   send(to, cc,
-    '[Choice Properties] New Message from ' + (d.tenantName || 'Tenant') + ' \u2014 ' + propertyLabel,
+    '[Progress Residential] New Message from ' + (d.tenantName || 'Tenant') + ' \u2014 ' + propertyLabel,
     wrap('New Message from Tenant', d.app_id || null, 'en',
       '<div class="status-line" style="color:#1e40af;background:#eff6ff">\ud83d\udcac &nbsp; You have a new message from a tenant</div>' +
       '<div class="email-body"><p class="greeting">Hi ' + esc(d.landlordName || 'there') + ',</p>' +
@@ -927,7 +927,7 @@ function sendNewMessageLandlord(to, cc, d, cfg) {
       '<div class="callout"><h4>Message</h4><p style="white-space:pre-line;font-size:14px;line-height:1.7">' + esc(d.message) + '</p></div>' +
       (d.app_id ? '<div class="cta-wrap"><a href="' + dashLink + '" class="cta-btn">View in Dashboard &rarr;</a></div>' : '') +
       '<div class="contact-row"><strong>Questions?</strong> &nbsp; Text: ' + cfg.companyPhone + ' &nbsp;&middot;&nbsp; ' + cfg.companyEmail + '</div>' +
-      '<div class="email-closing"><div class="sign-off">Choice Properties</div><div class="sign-company">' + cfg.companyEmail + '</div></div></div>', cfg), cfg);
+      '<div class="email-closing"><div class="sign-off">Progress Residential</div><div class="sign-company">' + cfg.companyEmail + '</div></div></div>', cfg), cfg);
 }
 
 // ── 17. New Message to Tenant (bilingual) ─────────────────
@@ -937,8 +937,8 @@ function sendNewMessageTenant(to, cc, d, cfg) {
   var lang = d.preferred_language || 'en';
   var dashLink = cfg.dashboardUrl + '/apply/dashboard.html?id=' + d.app_id;
   var senderName = d.sender_name || cfg.companyName + ' Leasing Team';
-  var subjectEn = '[Choice Properties] New Message Regarding Your Application \u2014 ' + d.app_id;
-  var subjectEs = '[Choice Properties] Nuevo Mensaje Sobre Su Solicitud \u2014 ' + d.app_id;
+  var subjectEn = '[Progress Residential] New Message Regarding Your Application \u2014 ' + d.app_id;
+  var subjectEs = '[Progress Residential] Nuevo Mensaje Sobre Su Solicitud \u2014 ' + d.app_id;
   var subject = lang === 'es' ? subjectEs : subjectEn;
   var titleEn = 'Message from Your Leasing Team';
   var titleEs = 'Mensaje de Su Equipo de Arrendamiento';
@@ -968,7 +968,7 @@ function sendNewApplication(to, cc, d, cfg) {
   var propertyAddr  = d.propertyAddress || d.property_address || 'your property';
   var rentLabel = d.monthly_rent ? ('$' + parseFloat(d.monthly_rent).toLocaleString('en-US', { minimumFractionDigits: 2 })) : 'See dashboard';
   send(to, cc,
-    '[Choice Properties] New Application \u2014 ' + applicantName + ' \u2014 ' + propertyAddr,
+    '[Progress Residential] New Application \u2014 ' + applicantName + ' \u2014 ' + propertyAddr,
     wrap('New Rental Application', d.app_id, 'en',
       '<div class="status-line status-pending">\ud83d\udccb &nbsp; A new application has been submitted for your property</div>' +
       '<div class="email-body"><p class="greeting">Hi ' + esc(d.landlordName || 'there') + ',</p>' +
@@ -983,7 +983,7 @@ function sendNewApplication(to, cc, d, cfg) {
       '</table></div>' +
       '<div class="section"><a href="' + dashLink + '" style="display:inline-block;background:#0a1628;color:white;text-decoration:none;padding:12px 24px;border-radius:3px;font-size:14px;font-weight:600;">Review Application \u2192</a></div>' +
       '<div class="contact-row"><strong>Questions?</strong> &nbsp; Text: ' + cfg.companyPhone + ' &nbsp;&middot;&nbsp; ' + cfg.companyEmail + '</div>' +
-      '<div class="email-closing"><div class="sign-off">Choice Properties System</div><div class="sign-company">Automated Notification \u2014 ' + d.app_id + '</div></div></div>', cfg), cfg);
+      '<div class="email-closing"><div class="sign-off">Progress Residential System</div><div class="sign-company">Automated Notification \u2014 ' + d.app_id + '</div></div></div>', cfg), cfg);
 }
 
 // ============================================================
@@ -1060,8 +1060,8 @@ function wrap(title, appId, lang, content, cfg) {
     '</div>' +
     '<div style="font-size:10px;color:#9aa3af;margin-top:10px;line-height:1.5;">' +
       (lang === 'es'
-        ? 'Recibe este correo transaccional porque envi\u00f3 una solicitud o firm\u00f3 un contrato a trav\u00e9s de Choice Properties. No es un mensaje de marketing.<br><strong>SMS:</strong> Responda HELP para ayuda, STOP para cancelar. Pueden aplicar tarifas de mensajes y datos. Cancelar SMS no afecta los correos de la solicitud.<br>Marco de Pol\u00edticas v2.0 &middot; Vigente 22 de abril de 2026.'
-        : 'You are receiving this transactional email because you submitted an application or signed a lease through Choice Properties. This is not a marketing message.<br><strong>SMS:</strong> Reply HELP for help, STOP to opt out. Msg &amp; data rates may apply. SMS opt-out does not affect application emails.<br>Policy Framework v2.0 &middot; Effective April 22, 2026.') +
+        ? 'Recibe este correo transaccional porque envi\u00f3 una solicitud o firm\u00f3 un contrato a trav\u00e9s de Progress Residential. No es un mensaje de marketing.<br><strong>SMS:</strong> Responda HELP para ayuda, STOP para cancelar. Pueden aplicar tarifas de mensajes y datos. Cancelar SMS no afecta los correos de la solicitud.<br>Marco de Pol\u00edticas v2.0 &middot; Vigente 22 de abril de 2026.'
+        : 'You are receiving this transactional email because you submitted an application or signed a lease through Progress Residential. This is not a marketing message.<br><strong>SMS:</strong> Reply HELP for help, STOP to opt out. Msg &amp; data rates may apply. SMS opt-out does not affect application emails.<br>Policy Framework v2.0 &middot; Effective April 22, 2026.') +
     '</div>' +
     '<div style="font-size:10px;color:#aaaaaa;margin-top:8px;line-height:1.6;">' + t('confidential', lang) + ' &copy; ' + new Date().getFullYear() + ' ' + cfg.companyName + '. ' + t('footerRights', lang) + '</div>' +
     '</div></div></body></html>';

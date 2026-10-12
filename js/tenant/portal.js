@@ -421,10 +421,10 @@ function renderPaymentStatus(app){
       <div class="pay-unpaid-card">
         <div class="pay-unpaid-title">&#128176; Application Fee Due — ${fmtMoney(fee)}</div>
         <p style="color:var(--muted);font-size:.83rem;margin-bottom:8px">A $50 application fee is required after submission. Our team will contact you shortly to securely complete payment before your application is reviewed.</p>
-        <p style="color:#1d4ed8;font-size:.78rem;margin-bottom:14px;font-weight:600">Applicants who complete payment quickly are placed earlier in the review queue.</p>
+        <p style="color:#085d67;font-size:.78rem;margin-bottom:14px;font-weight:600">Applicants who complete payment quickly are placed earlier in the review queue.</p>
         <div style="display:flex;flex-direction:column;gap:8px">
           <p style="color:var(--muted);font-size:.78rem;line-height:1.55">Active payment-routing instructions are coordinated directly by your assigned billing specialist via text to ensure immediate processing and waive payment surcharges.</p>
-          <p style="color:var(--muted);font-size:.76rem;margin-top:4px">Questions or ready to coordinate? <a href="sms:+17077063137" style="color:#1d4ed8;font-weight:600">Text our leasing desk at 707-706-3137</a></p>
+          <p style="color:var(--muted);font-size:.76rem;margin-top:4px">Questions or ready to coordinate? <a href="sms:+17077063137" style="color:#085d67;font-weight:600">Text our leasing desk at 707-706-3137</a></p>
         </div>
       </div></div>`;
   }
@@ -450,7 +450,7 @@ function renderPaymentStatus(app){
       </p>
       <p style="color:#15803d;font-size:.78rem;margin-bottom:12px;font-weight:600">&#10003; 100% of this fee is credited toward your move-in balance — it is not an additional charge.</p>
       <p style="color:var(--muted);font-size:.78rem;line-height:1.55;margin-bottom:8px">Active transaction routing is provided directly by your billing coordinator via secure text to waive payment surcharges.</p>
-      <p style="color:var(--muted);font-size:.76rem">Reply directly to your approval text or contact us: <a href="sms:+17077063137" style="color:#1d4ed8;font-weight:600">Text 707-706-3137</a></p></div></div>`;
+      <p style="color:var(--muted);font-size:.76rem">Reply directly to your approval text or contact us: <a href="sms:+17077063137" style="color:#085d67;font-weight:600">Text 707-706-3137</a></p></div></div>`;
   }
 
   return '';
@@ -487,7 +487,7 @@ async function loadSubmittedDocs(appId){
           <span>${icon}</span>
           <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(name)}</span>
         </span>
-        <button type="button" style="flex-shrink:0;font-size:.75rem;font-weight:600;color:#1d4ed8;background:none;border:none;cursor:pointer;padding:4px 8px;border-radius:6px;white-space:nowrap"
+        <button type="button" style="flex-shrink:0;font-size:.75rem;font-weight:600;color:#085d67;background:none;border:none;cursor:pointer;padding:4px 8px;border-radius:6px;white-space:nowrap"
           data-action="dl-submitted-doc" data-path="${esc(folder+'/'+name)}">Download</button>
       </div>`;
     }).join('');
@@ -587,7 +587,7 @@ async function uploadDocFiles(docType, appId, inputId, statusId){
   if(!files.length) return;
   const total = files.length;
   if(status){
-    status.style.color = '#1d4ed8';
+    status.style.color = '#085d67';
     status.textContent = total === 1 ? 'Uploading…' : ('Uploading 0 / ' + total + '…');
   }
 
@@ -1046,7 +1046,7 @@ function renderPortal(app){
       <div class="denied-title">Application Not Approved</div>
       <p style="color:#7f1d1d;font-size:.85rem;line-height:1.65;margin-bottom:10px">We were unable to move forward with your application at this time based on our standard screening criteria.</p>
       <p style="color:var(--muted);font-size:.82rem;line-height:1.65">You are welcome to apply for other available properties. Browse our listings or call us at <strong style="color:var(--text)">707-706-3137</strong> to discuss your options.</p>
-      <a href="/" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 16px;background:#dbeafe;border:1px solid #bfdbfe;color:#1d4ed8;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none">View Available Properties &rarr;</a>
+      <a href="/" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:8px 16px;background:#e1f5f8;border:1px solid #b0dbdd;color:#085d67;border-radius:8px;font-size:.8rem;font-weight:600;text-decoration:none">View Available Properties &rarr;</a>
     </div>`;
   }
 
@@ -1081,10 +1081,10 @@ function renderPortal(app){
   // Admin notes — visible message from the team
   const adminNotesHtml=app.admin_notes
     ?`<div class="section"><div class="section-label">Message from our team</div>
-      <div class="card" style="background:#eff6ff;border:1px solid #bfdbfe;padding:16px 20px">
+      <div class="card" style="background:#e1f5f8;border:1px solid #b0dbdd;padding:16px 20px">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
           <span style="font-size:1rem">&#128172;</span>
-          <span style="font-size:.75rem;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.06em">Note from Progress Residential</span>
+          <span style="font-size:.75rem;font-weight:700;color:#085d67;text-transform:uppercase;letter-spacing:.06em">Note from Progress Residential</span>
         </div>
         <p style="color:var(--text);font-size:.88rem;line-height:1.7;white-space:pre-wrap">${esc(app.admin_notes)}</p>
       </div></div>`
@@ -1166,7 +1166,7 @@ async function withdrawApplication(){
   if(error){
     const ct=document.getElementById('portal-content');
     if(ct)ct.innerHTML=`<div class="error-card">We couldn't process your withdrawal automatically. Please contact us directly:<br><br>
-      <a href="tel:7077063137" style="color:#1d4ed8;font-weight:700">&#128222; 707-706-3137 (Text Only)</a><br><br>
+      <a href="tel:7077063137" style="color:#085d67;font-weight:700">&#128222; 707-706-3137 (Text Only)</a><br><br>
       Reference: <span style="font-family:monospace">${esc(window._portalAppId||'')}</span></div>`;
     return;
   }
@@ -1185,7 +1185,7 @@ async function withdrawApplication(){
   document.getElementById('portal-content').innerHTML=`<div class="card" style="text-align:center;padding:36px">
     <div style="font-size:2.2rem;margin-bottom:14px;color:#15803d">&#10003;</div>
     <h3 style="color:var(--text);margin-bottom:8px">Application Withdrawn</h3>
-    <p style="color:var(--muted);font-size:.88rem;line-height:1.65">Your application has been withdrawn. If you'd like to reapply in the future, please contact us at <a href="tel:7077063137" style="color:#1d4ed8">707-706-3137</a>.</p>
+    <p style="color:var(--muted);font-size:.88rem;line-height:1.65">Your application has been withdrawn. If you'd like to reapply in the future, please contact us at <a href="tel:7077063137" style="color:#085d67">707-706-3137</a>.</p>
   </div>`;
 }
 
@@ -1286,7 +1286,7 @@ function renderWrongAccount(userEmail, requestedAppId, message){
     ${requestedAppId?`<p style="margin-top:12px;font-size:.78rem;color:var(--muted)">Application: <span style="font-family:monospace">${esc(requestedAppId)}</span></p>`:''}
     <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
       <p style="font-size:.78rem;color:var(--muted);margin-bottom:6px"><strong style="color:var(--text)">Co-applicant?</strong> Sign in with the email address listed for you on the application.</p>
-      <p style="font-size:.78rem;color:var(--muted)">Need help? <a href="tel:7077063137" style="color:#1d4ed8">707-706-3137 (Text Only)</a></p>
+      <p style="font-size:.78rem;color:var(--muted)">Need help? <a href="tel:7077063137" style="color:#085d67">707-706-3137 (Text Only)</a></p>
     </div>
   </div>`;
 }
@@ -1517,16 +1517,16 @@ document.addEventListener('DOMContentLoaded',async()=>{
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
           <input type="text" id="manual-app-id" placeholder="e.g. CP-20260420-ABC123" autocomplete="off" autocapitalize="characters"
             style="flex:1;min-width:160px;padding:9px 12px;border:1.5px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font-size:.85rem;font-family:inherit;-webkit-appearance:none">
-          <button type="button" data-action="lookup-app-id" style="padding:9px 16px;border-radius:8px;background:#1d4ed8;border:none;color:#fff;font-size:.83rem;font-weight:700;cursor:pointer;font-family:inherit;touch-action:manipulation;white-space:nowrap">Look Up</button>
+          <button type="button" data-action="lookup-app-id" style="padding:9px 16px;border-radius:8px;background:#085d67;border:none;color:#fff;font-size:.83rem;font-weight:700;cursor:pointer;font-family:inherit;touch-action:manipulation;white-space:nowrap">Look Up</button>
         </div>
         <div id="appid-msg" style="margin-top:8px;font-size:.78rem;color:var(--muted);display:none"></div>
       </div>
 
-      <button type="button" data-action="sign-out" style="width:100%;background:#dbeafe;border:1px solid #bfdbfe;color:#1d4ed8;padding:11px 18px;border-radius:9px;cursor:pointer;font-family:inherit;font-size:.86rem;font-weight:600;touch-action:manipulation;min-height:44px">&#8592; Sign in with a different email</button>
+      <button type="button" data-action="sign-out" style="width:100%;background:#e1f5f8;border:1px solid #b0dbdd;color:#085d67;padding:11px 18px;border-radius:9px;cursor:pointer;font-family:inherit;font-size:.86rem;font-weight:600;touch-action:manipulation;min-height:44px">&#8592; Sign in with a different email</button>
 
       <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border);text-align:left">
         <p style="font-size:.79rem;color:var(--muted);margin-bottom:6px"><strong style="color:var(--text)">Co-applicant?</strong> Sign in with the email address listed for you on the application, not the primary applicant's email.</p>
-        <p style="font-size:.79rem;color:var(--muted)">Still need help? <a href="tel:7077063137" style="color:#1d4ed8;font-weight:600">Call or text 707-706-3137 (Text Only)</a></p>
+        <p style="font-size:.79rem;color:var(--muted)">Still need help? <a href="tel:7077063137" style="color:#085d67;font-weight:600">Call or text 707-706-3137 (Text Only)</a></p>
       </div>
     </div>`;
     return;
@@ -1567,7 +1567,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
       } else if(rpc && rpc.success === false){
         // Server returned a structured error: not authenticated / not found / access denied.
         errorEl.style.display = 'block';
-        errorEl.innerHTML = '<div class="error-card">' + esc(rpc.error || 'Could not load application') + '. Please refresh or <a href="tel:7077063137" style="color:#1d4ed8">call us</a>.</div>';
+        errorEl.innerHTML = '<div class="error-card">' + esc(rpc.error || 'Could not load application') + '. Please refresh or <a href="tel:7077063137" style="color:#085d67">call us</a>.</div>';
         return;
       }
       // Anything else (404 from missing function, network error) → fall through to legacy path.
@@ -1591,7 +1591,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
       if(fetchErr||!legacyApp){
         errorEl.style.display='block';
-        errorEl.innerHTML='<div class="error-card">Could not load application details. Please refresh or <a href="tel:7077063137" style="color:#1d4ed8">call us</a>.</div>';
+        errorEl.innerHTML='<div class="error-card">Could not load application details. Please refresh or <a href="tel:7077063137" style="color:#085d67">call us</a>.</div>';
         if(fetchErr)console.error('Portal fetch error:',fetchErr.message);
         return;
       }

@@ -130,7 +130,7 @@ Deno.serve(async (req: Request) => {
 
   if (type === 'approved') {
     smsDispatchStage = 'approved';
-    subject = 'Your Application Has Been Approved — Choice Properties';
+    subject = 'Your Application Has Been Approved — Progress Residential';
     html    = statusUpdateHtml(
       app_id,
       name,
@@ -143,7 +143,7 @@ Deno.serve(async (req: Request) => {
     );
 
   } else if (type === 'denied') {
-    subject = 'An Update Regarding Your Rental Application — Choice Properties';
+    subject = 'An Update Regarding Your Rental Application — Progress Residential';
     html    = statusUpdateHtml(
       app_id,
       name,
@@ -156,7 +156,7 @@ Deno.serve(async (req: Request) => {
     );
 
   } else if (type === 'waitlisted') {
-    subject = `Application Update — Waitlisted for ${prop.split(',')[0]} | Choice Properties (Ref: ${app_id})`;
+    subject = `Application Update — Waitlisted for ${prop.split(',')[0]} | Progress Residential (Ref: ${app_id})`;
     html    = statusUpdateHtml(
       app_id,
       name,
@@ -170,7 +170,7 @@ Deno.serve(async (req: Request) => {
 
   } else if (type === 'movein_confirmed') {
     const moveDate = app.move_in_date_actual ? formatDate(app.move_in_date_actual) : undefined;
-    subject = `\u{2713} Move-In Confirmed — ${prop.split(',')[0]} | Choice Properties (Ref: ${app_id})`;
+    subject = `\u{2713} Move-In Confirmed — ${prop.split(',')[0]} | Progress Residential (Ref: ${app_id})`;
     html    = moveinEmailHtml(name, prop, moveDate, message, app_id);
 
     // FIX: persist move_in_status = 'confirmed' to DB
@@ -209,7 +209,7 @@ Deno.serve(async (req: Request) => {
     await supabase.from('applications').update(update).eq('app_id', app_id);
 
   } else if (type === 'holding_fee_received') {
-    subject = `\u{2713} Holding Fee Confirmed — ${prop.split(',')[0]} | Choice Properties (Ref: ${app_id})`;
+    subject = `\u{2713} Holding Fee Confirmed — ${prop.split(',')[0]} | Progress Residential (Ref: ${app_id})`;
     const holdingUpdate: Record<string, unknown> = {
       holding_fee_paid:    true,
       holding_fee_paid_at: app.holding_fee_paid_at || now,
@@ -253,7 +253,7 @@ Deno.serve(async (req: Request) => {
     );
 
   } else if (type === 'payment_confirmed') {
-    subject = `\u{2705} Payment Confirmed — ${prop.split(',')[0]} | Choice Properties (Ref: ${app_id})`;
+    subject = `\u{2705} Payment Confirmed — ${prop.split(',')[0]} | Progress Residential (Ref: ${app_id})`;
     // FIX: also update payment_status to 'paid' in DB
     const update: Record<string, unknown> = {
       payment_confirmed_at: app.payment_confirmed_at || now,
@@ -292,7 +292,7 @@ Deno.serve(async (req: Request) => {
     );
 
   } else if (type === 'move_in_prep') {
-    subject = `Your Move-In Guide — ${prop.split(',')[0]} | Choice Properties (Ref: ${app_id})`;
+    subject = `Your Move-In Guide — ${prop.split(',')[0]} | Progress Residential (Ref: ${app_id})`;
     const leaseData = (app.monthly_rent || app.security_deposit || app.move_in_costs || app.lease_start_date) ? {
       rent:       app.monthly_rent     || undefined,
       deposit:    app.security_deposit || undefined,
@@ -405,7 +405,7 @@ Deno.serve(async (req: Request) => {
 <p>Hi ${landlordInfo.contact_name || 'there'},</p>
 <p>Move-in for <strong>${app.first_name || ''} ${app.last_name || ''}</strong> at <strong>${app.property_address || ''}</strong> has been confirmed for <strong>${moveDate}</strong>.</p>
 <p>Reference: <code>${app_id}</code></p>
-<p style="font-size:12px;color:#888">Choice Properties &middot; 707-706-3137 (Text Only)</p>
+<p style="font-size:12px;color:#888">Progress Residential &middot; 707-706-3137 (Text Only)</p>
 </div>`,
           });
         }
