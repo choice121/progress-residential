@@ -21,12 +21,12 @@
  */
 export const CREDENTIALS_CONFIG = {
   // Public Supabase project URL (safe to share)
-  SUPABASE_URL: "https://tlfmwetmhthpyrytrcfo.supabase.co",
+  SUPABASE_URL: "https://poqgtsltsziuwvzskgth.supabase.co",
 
   // Supabase API key for reading the shared credentials table.
-  // This is the service_role key — already public in scraper/.env.
+  // This is the service_role key — used for server-side management.
   SUPABASE_API_KEY:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTE4MzAyNCwiZXhwIjoyMDkwNzU5MDI0fQ.oO9N8LslPcDjQrzZWiUoTkOlDBqUVHBiVhRSGLC-EPE",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBvcWd0c2x0c3ppdXd2enNrZ3RoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MDc0NTg3NywiZXhwIjoyMTA2MzIxODc3fQ.9gGmNOV20S7r0mshF5y3lkbbs-4tPjum2RUMIyCNcvA",
 
   // Shared write-secret — gates writes to the credentials table.
   // Intentionally public so any fork can update credentials.

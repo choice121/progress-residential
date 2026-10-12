@@ -13,12 +13,12 @@ const fs = require('fs');
 // Read from environment variables (set in your hosting platform's dashboard)
 let rawSupabaseUrl = process.env.SUPABASE_URL || '';
 if (!rawSupabaseUrl || rawSupabaseUrl.includes('your-project-ref')) {
-  rawSupabaseUrl = 'https://tlfmwetmhthpyrytrcfo.supabase.co';
+  rawSupabaseUrl = 'https://poqgtsltsziuwvzskgth.supabase.co';
 }
 
 const config = {
   SUPABASE_URL:      rawSupabaseUrl,
-  SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsZm13ZXRtaHRocHlyeXRyY2ZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUxODMwMjQsImV4cCI6MjA5MDc1OTAyNH0.sqjt9_oMKDoorA8Tzed1hlkH5zEQGZvFskAG3Qr9CFw',
+  SUPABASE_ANON_KEY: process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBvcWd0c2x0c3ppdXd2enNrZ3RoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA3NDU4NzcsImV4cCI6MjEwNjMyMTg3N30.c1yck8cVXksYxE1xVhPGw2Q6EQrLNbkI8IZXbQG-y3E',
 
   // I-029: SITE_URL is used to rewrite sitemap.xml and robots.txt at build time.
   // Set this to your production domain in your hosting platform's env var dashboard.
@@ -30,8 +30,8 @@ const config = {
   // Keep this as /apply unless the internal route changes.
   APPLY_FORM_URL: (process.env.APPLY_FORM_URL || '/apply').replace(/\/$/, ''),
 
-  IMAGEKIT_URL:        process.env.IMAGEKIT_URL        || 'https://ik.imagekit.io/21rg7lvzo',
-  IMAGEKIT_PUBLIC_KEY: process.env.IMAGEKIT_PUBLIC_KEY || 'public_...your-key',
+  IMAGEKIT_URL:        process.env.IMAGEKIT_URL        || 'https://ik.imagekit.io/Morganwallen',
+  IMAGEKIT_PUBLIC_KEY: process.env.IMAGEKIT_PUBLIC_KEY || 'public_XfAVF8Nd/pyXH0h3S1j7zdjIT2I=',
 
   GEOAPIFY_API_KEY: process.env.GEOAPIFY_API_KEY || '',
 
